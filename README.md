@@ -2,7 +2,6 @@
 An open hardware and software indoor air quality sensor provided by the [National Association of REALTORS](http://realtor.org) and [CRT Labs](https://crtlabs.org).
 
 ![](assets/Touchstone.jpg)
-
 ![bruh](assets/render.png)
 
 Measurement Points:
