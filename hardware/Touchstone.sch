@@ -3292,32 +3292,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="SOT223">
-<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
-<wire x1="3.2766" y1="1.778" x2="3.2766" y2="-1.778" width="0.2032" layer="21"/>
-<wire x1="3.2766" y1="-1.778" x2="-3.2766" y2="-1.778" width="0.2032" layer="21"/>
-<wire x1="-3.2766" y1="-1.778" x2="-3.2766" y2="1.778" width="0.2032" layer="21"/>
-<wire x1="-3.2766" y1="1.778" x2="3.2766" y2="1.778" width="0.2032" layer="21"/>
-<smd name="1" x="-2.3114" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
-<smd name="2" x="0" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
-<smd name="3" x="2.3114" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
-<smd name="4" x="0" y="3.099" dx="3.6" dy="2.2" layer="1"/>
-<text x="1.0208" y="-4.318" size="0.8128" layer="21" ratio="12">3</text>
-<text x="1.905" y="2.54" size="0.8128" layer="21" ratio="12">4</text>
-<text x="-3.4526" y="-4.318" size="0.8128" layer="21" ratio="12">1</text>
-<text x="-1.2906" y="-4.3274" size="0.8128" layer="21" ratio="12">2</text>
-<text x="-2.54" y="0.0508" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-1.3208" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
-<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
-<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
-<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
-<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
-<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
-<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
-<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
-</package>
-<package name="SOT23">
+<package name="SOT23" urn="urn:adsk.eagle:footprint:16354/1" library_version="1">
 <description>&lt;b&gt;SMALL OUTLINE TRANSISTOR&lt;/b&gt;&lt;p&gt;
 reflow soldering</description>
 <wire x1="-1.973" y1="1.983" x2="1.973" y2="1.983" width="0.0508" layer="39"/>
@@ -3342,9 +3317,43 @@ reflow soldering</description>
 <rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
 <rectangle x1="-0.5001" y1="-0.3" x2="0.5001" y2="0.3" layer="35"/>
 </package>
+<package name="SOT223" urn="urn:adsk.eagle:footprint:16157/1" library_version="1">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
+<wire x1="3.2766" y1="1.778" x2="3.2766" y2="-1.778" width="0.2032" layer="21"/>
+<wire x1="3.2766" y1="-1.778" x2="-3.2766" y2="-1.778" width="0.2032" layer="21"/>
+<wire x1="-3.2766" y1="-1.778" x2="-3.2766" y2="1.778" width="0.2032" layer="21"/>
+<wire x1="-3.2766" y1="1.778" x2="3.2766" y2="1.778" width="0.2032" layer="21"/>
+<smd name="1" x="-2.3114" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
+<smd name="2" x="0" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
+<smd name="3" x="2.3114" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
+<smd name="4" x="0" y="3.099" dx="3.6" dy="2.2" layer="1"/>
+<text x="1.0208" y="-4.318" size="0.8128" layer="21" ratio="12">3</text>
+<text x="1.905" y="2.54" size="0.8128" layer="21" ratio="12">4</text>
+<text x="-3.4526" y="-4.318" size="0.8128" layer="21" ratio="12">1</text>
+<text x="-1.2906" y="-4.3274" size="0.8128" layer="21" ratio="12">2</text>
+<text x="-2.54" y="0.0508" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-1.3208" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
+<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
+<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
+<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
+<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
+<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
+<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
+<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
+</package>
 </packages>
+<packages3d>
+<package3d name="SOT23" urn="urn:adsk.eagle:package:16489/1" type="box" library_version="1">
+<description>SMALL OUTLINE TRANSISTOR
+reflow soldering</description>
+</package3d>
+<package3d name="SOT223" urn="urn:adsk.eagle:package:16418/1" type="box" library_version="1">
+<description>Small Outline Transistor</description>
+</package3d>
+</packages3d>
 <symbols>
-<symbol name="78XX">
+<symbol name="78XX" urn="urn:adsk.eagle:symbol:16149/1" library_version="1">
 <wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.4064" layer="94"/>
 <wire x1="7.62" y1="-5.08" x2="7.62" y2="2.54" width="0.4064" layer="94"/>
 <wire x1="7.62" y1="2.54" x2="-7.62" y2="2.54" width="0.4064" layer="94"/>
@@ -3358,7 +3367,7 @@ reflow soldering</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MCP1703" prefix="IC">
+<deviceset name="MCP1703" urn="urn:adsk.eagle:component:16824/1" prefix="IC" library_version="1">
 <description>&lt;b&gt;250 mA, 16V, Low Quiescent Current LDO Regulator&lt;/b&gt;&lt;p&gt;
 Source: http://ww1.microchip.com/downloads/en/DeviceDoc/22049b.pdf</description>
 <gates>
@@ -3371,6 +3380,9 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/22049b.pdf</description>
 <connect gate="G$1" pin="VI" pad="1"/>
 <connect gate="G$1" pin="VO" pad="3"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16418/1"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -3381,6 +3393,9 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/22049b.pdf</description>
 <connect gate="G$1" pin="VI" pad="3"/>
 <connect gate="G$1" pin="VO" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16489/1"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -4385,14 +4400,14 @@ Please use FRAME-LEDGER/FRAME-LETTER for schematics now.</description>
 <packages>
 </packages>
 <symbols>
-<symbol name="GND">
+<symbol name="GND" urn="urn:adsk.eagle:symbol:26925/1" library_version="1">
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="GND" prefix="GND">
+<deviceset name="GND" urn="urn:adsk.eagle:component:26954/1" prefix="GND" library_version="1">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="GND" x="0" y="0"/>
@@ -6481,6 +6496,53 @@ github.com/AKstudios</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="CONN_HDR_1.27MM_SMD_4POS">
+<packages>
+<package name="CONN_HDR_1.27MM_SMD_4POS">
+<smd name="P$1" x="0.635" y="1.5" dx="3" dy="0.65" layer="1" rot="R90"/>
+<smd name="P$2" x="1.905" y="-1.5" dx="3" dy="0.65" layer="1" rot="R90"/>
+<smd name="P$3" x="3.175" y="1.5" dx="3" dy="0.65" layer="1" rot="R90"/>
+<smd name="P$4" x="4.445" y="-1.5" dx="3" dy="0.65" layer="1" rot="R90"/>
+<circle x="0.635" y="0" radius="0.21" width="0.01" layer="21"/>
+<circle x="1.905" y="0" radius="0.21" width="0.01" layer="21"/>
+<circle x="3.175" y="0" radius="0.21" width="0.01" layer="21"/>
+<circle x="4.445" y="0" radius="0.21" width="0.01" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="CONN_HDR_1.27MM_SMD_4POS">
+<pin name="P$1" x="10.16" y="7.62" length="middle" rot="R180"/>
+<pin name="P$2" x="10.16" y="5.08" length="middle" rot="R180"/>
+<pin name="P$3" x="10.16" y="2.54" length="middle" rot="R180"/>
+<pin name="P$4" x="10.16" y="0" length="middle" rot="R180"/>
+<wire x1="5.08" y1="10.16" x2="-2.54" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="10.16" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="10.16" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CONN_HDR_1.27MM_SMD_4POS">
+<description>MPN: M50-3630442</description>
+<gates>
+<gate name="G$1" symbol="CONN_HDR_1.27MM_SMD_4POS" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="CONN_HDR_1.27MM_SMD_4POS">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6497,7 +6559,7 @@ github.com/AKstudios</description>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="SUPPLY7" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="U8" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="MCP1703" device="CB">
+<part name="U8" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="MCP1703" device="CB" package3d_urn="urn:adsk.eagle:package:16489/1">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value="MCP1703T-2502E/CB"/>
 <attribute name="OC_NEWARK" value="18T9177"/>
@@ -6632,6 +6694,7 @@ github.com/AKstudios</description>
 <part name="R14" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="100K"/>
 <part name="SUPPLY19" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="SUPPLY20" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
+<part name="U$6" library="CONN_HDR_1.27MM_SMD_4POS" deviceset="CONN_HDR_1.27MM_SMD_4POS" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6655,7 +6718,7 @@ Relative Humidity</text>
 <text x="248.666" y="-87.122" size="2.54" layer="94" font="vector" ratio="10">github.crtlabs.org</text>
 <text x="157.48" y="101.6" size="1.778" layer="97">0x29</text>
 <text x="139.7" y="78.74" size="2.54" layer="94" font="vector">RGB LED</text>
-<text x="127" y="30.48" size="2.54" layer="94" font="vector">I2C Headers</text>
+<text x="124.46" y="30.48" size="2.54" layer="94" font="vector">I2C Headers</text>
 <text x="73.66" y="129.54" size="2.54" layer="94" font="vector">PM2.5 sensor</text>
 <text x="185.42" y="81.28" size="2.54" layer="94" font="vector">RFM69HCW</text>
 <wire x1="-68.58" y1="88.9" x2="-5.08" y2="88.9" width="0.1524" layer="94" style="longdash"/>
@@ -6690,10 +6753,11 @@ Relative Humidity</text>
 <wire x1="180.34" y1="88.9" x2="180.34" y2="43.18" width="0.1524" layer="94" style="longdash"/>
 <wire x1="180.34" y1="43.18" x2="180.34" y2="-12.7" width="0.1524" layer="94" style="longdash"/>
 <wire x1="116.84" y1="43.18" x2="180.34" y2="43.18" width="0.1524" layer="94" style="longdash"/>
-<text x="127" y="-5.08" size="2.54" layer="94" font="vector">5V Power</text>
+<text x="124.46" y="-5.08" size="2.54" layer="94" font="vector">5V Power</text>
 <wire x1="180.34" y1="43.18" x2="312.42" y2="43.18" width="0.1524" layer="94" style="longdash"/>
 <text x="91.44" y="-2.54" size="1.778" layer="97">0x5B</text>
 <text x="30.48" y="104.14" size="1.778" layer="97">0x40</text>
+<text x="124.46" y="12.7" size="2.54" layer="94" font="vector">T/RH Headers</text>
 </plain>
 <instances>
 <instance part="GND1" gate="1" x="-38.1" y="-106.68"/>
@@ -6834,6 +6898,7 @@ Relative Humidity</text>
 <instance part="R14" gate="G$1" x="109.22" y="20.32" rot="R270"/>
 <instance part="SUPPLY19" gate="G$1" x="58.42" y="25.4"/>
 <instance part="SUPPLY20" gate="G$1" x="109.22" y="25.4"/>
+<instance part="U$6" gate="G$1" x="157.48" y="10.16"/>
 </instances>
 <busses>
 </busses>
@@ -7039,6 +7104,11 @@ Relative Humidity</text>
 <wire x1="271.78" y1="99.06" x2="274.32" y2="99.06" width="0.1524" layer="91"/>
 <label x="274.32" y="99.06" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="P$4"/>
+<wire x1="167.64" y1="10.16" x2="170.18" y2="10.16" width="0.1524" layer="91"/>
+<label x="170.18" y="10.16" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -7206,6 +7276,11 @@ Relative Humidity</text>
 <pinref part="R14" gate="G$1" pin="1"/>
 <pinref part="SUPPLY20" gate="G$1" pin="VCC"/>
 </segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="P$1"/>
+<wire x1="167.64" y1="17.78" x2="170.18" y2="17.78" width="0.1524" layer="91"/>
+<label x="170.18" y="17.78" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
@@ -7247,6 +7322,11 @@ Relative Humidity</text>
 <wire x1="101.6" y1="15.24" x2="104.14" y2="15.24" width="0.1524" layer="91"/>
 <label x="101.6" y="15.24" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="P$2"/>
+<wire x1="167.64" y1="15.24" x2="170.18" y2="15.24" width="0.1524" layer="91"/>
+<label x="170.18" y="15.24" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
@@ -7287,6 +7367,11 @@ Relative Humidity</text>
 <pinref part="U13" gate="G$1" pin="SDA"/>
 <wire x1="101.6" y1="12.7" x2="104.14" y2="12.7" width="0.1524" layer="91"/>
 <label x="101.6" y="12.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="P$3"/>
+<wire x1="167.64" y1="12.7" x2="170.18" y2="12.7" width="0.1524" layer="91"/>
+<label x="170.18" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -7863,8 +7948,8 @@ Relative Humidity</text>
 <approved hash="106,1,15.24,-60.96,A7,,,,,"/>
 <approved hash="113,1,179.07,-79.0617,RX,,,,,"/>
 <approved hash="113,1,171.45,-81.6017,TX,,,,,"/>
-<approved hash="113,1,161.883,33.2147,J1,,,,,"/>
-<approved hash="113,1,161.883,-2.34527,J2,,,,,"/>
+<approved hash="113,1,161.883,33.3096,J1,,,,,"/>
+<approved hash="113,1,161.883,-2.25044,J2,,,,,"/>
 </errors>
 </schematic>
 </drawing>
@@ -7877,6 +7962,16 @@ which will not be processed correctly with this version.
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>
