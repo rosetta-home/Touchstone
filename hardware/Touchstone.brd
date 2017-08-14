@@ -159,7 +159,7 @@
 <plain>
 <text x="4.699" y="19.8628" size="1.016" layer="122" font="vector" ratio="16" rot="MR90" align="center-left">Touchstone</text>
 <text x="30.9372" y="49.5046" size="0.6096" layer="122" font="vector" rot="MR0">Designed by Akram Ali</text>
-<text x="3.0988" y="19.939" size="0.6096" layer="122" font="vector" rot="MR90">v0.57 | August 2017</text>
+<text x="3.0988" y="19.939" size="0.6096" layer="122" font="vector" rot="MR90">v0.5.7 | August 2017</text>
 <text x="2.5654" y="19.939" size="0.8128" layer="122" font="vector" ratio="12" rot="MR270" align="bottom-right">crtlabs.org</text>
 <rectangle x1="1.3462" y1="12.8524" x2="1.7526" y2="12.9032" layer="122" rot="R90"/>
 <rectangle x1="1.3208" y1="12.827" x2="1.8796" y2="12.8778" layer="122" rot="R90"/>
@@ -2221,7 +2221,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="33.782" y="2.8385" size="0.6096" layer="121" font="vector" align="bottom-center"/>
 </element>
 <element name="R14" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="100K" x="31.6484" y="2.3622" smashed="yes" rot="R180">
-<attribute name="NAME" x="31.75" y="1.8605" size="0.6096" layer="121" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="NAME" x="31.7246" y="3.4607" size="0.6096" layer="121" font="vector" rot="R180" align="bottom-center"/>
 </element>
 <element name="U$6" library="CONN_HDR_1.27MM_SMD_4POS" package="CONN_HDR_1.27MM_SMD_4POS" value="CONN_HDR_1.27MM_SMD_4POS" x="45.2882" y="43.1038"/>
 </elements>
