@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.2">
+<eagle version="8.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -6627,6 +6628,10 @@ github.com/AKstudios</description>
 <part name="SUPPLY18" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="U$4" library="0878980426" deviceset="0878980426" device=""/>
 <part name="U$5" library="0878980426" deviceset="0878980426" device=""/>
+<part name="R12" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="100K"/>
+<part name="R14" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="100K"/>
+<part name="SUPPLY19" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
+<part name="SUPPLY20" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6646,7 +6651,7 @@ Relative Humidity</text>
 <text x="132.08" y="-25.4" size="2.54" layer="94" font="vector">USB + FTDI</text>
 <text x="88.9" y="55.88" size="1.778" layer="97">0x5A</text>
 <text x="220.98" y="104.14" size="1.778" layer="97">0x77</text>
-<text x="257.556" y="-102.362" size="2.54" layer="94" font="vector" ratio="10">0.56b</text>
+<text x="257.556" y="-102.362" size="2.54" layer="94" font="vector" ratio="10">0.57</text>
 <text x="248.666" y="-87.122" size="2.54" layer="94" font="vector" ratio="10">github.crtlabs.org</text>
 <text x="157.48" y="101.6" size="1.778" layer="97">0x29</text>
 <text x="139.7" y="78.74" size="2.54" layer="94" font="vector">RGB LED</text>
@@ -6825,6 +6830,10 @@ Relative Humidity</text>
 <instance part="SUPPLY18" gate="G$1" x="111.76" y="96.52"/>
 <instance part="U$4" gate="G$1" x="259.08" y="101.6"/>
 <instance part="U$5" gate="G$1" x="289.56" y="101.6"/>
+<instance part="R12" gate="G$1" x="58.42" y="20.32" rot="R270"/>
+<instance part="R14" gate="G$1" x="109.22" y="20.32" rot="R270"/>
+<instance part="SUPPLY19" gate="G$1" x="58.42" y="25.4"/>
+<instance part="SUPPLY20" gate="G$1" x="109.22" y="25.4"/>
 </instances>
 <busses>
 </busses>
@@ -7188,6 +7197,14 @@ Relative Humidity</text>
 <wire x1="101.6" y1="93.98" x2="111.76" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="93.98" x2="111.76" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="SUPPLY18" gate="G$1" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="R12" gate="G$1" pin="1"/>
+<pinref part="SUPPLY19" gate="G$1" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="R14" gate="G$1" pin="1"/>
+<pinref part="SUPPLY20" gate="G$1" pin="VCC"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -7700,6 +7717,12 @@ Relative Humidity</text>
 <pinref part="U13" gate="G$1" pin="WAKE"/>
 <wire x1="101.6" y1="7.62" x2="106.68" y2="7.62" width="0.1524" layer="91"/>
 <label x="101.6" y="7.62" size="1.778" layer="95"/>
+<wire x1="106.68" y1="7.62" x2="109.22" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="7.62" x2="106.68" y2="12.7" width="0.1524" layer="91"/>
+<junction x="106.68" y="7.62"/>
+<pinref part="R14" gate="G$1" pin="2"/>
+<wire x1="106.68" y1="12.7" x2="109.22" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="12.7" x2="109.22" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D7" class="0">
@@ -7809,6 +7832,14 @@ Relative Humidity</text>
 <label x="261.62" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="U13" gate="G$1" pin="RESET"/>
+<pinref part="R12" gate="G$1" pin="2"/>
+<wire x1="66.04" y1="12.7" x2="58.42" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="12.7" x2="58.42" y2="15.24" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -7843,7 +7874,7 @@ Since Version 6.2.2 text objects can contain more than one line,
 which will not be processed correctly with this version.
 </note>
 <note version="8.2" severity="warning">
-Since Version 8.2, Eagle supports online libraries. The ids
+Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
 </note>
