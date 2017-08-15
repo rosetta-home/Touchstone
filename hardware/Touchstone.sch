@@ -8378,9 +8378,13 @@ Relative Humidity</text>
 <pinref part="U5" gate="G$1" pin="PD3"/>
 </segment>
 <segment>
-<pinref part="U7" gate="G$1" pin="TX"/>
-<wire x1="73.66" y1="104.14" x2="71.12" y2="104.14" width="0.1524" layer="91"/>
-<label x="71.12" y="104.14" size="1.778" layer="95" rot="R180"/>
+<pinref part="C8" gate="G$1" pin="2"/>
+<pinref part="R21" gate="G$1" pin="1"/>
+<wire x1="78.74" y1="-63.5" x2="78.74" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="-58.42" x2="76.2" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="-58.42" x2="81.28" y2="-58.42" width="0.1524" layer="91"/>
+<junction x="78.74" y="-58.42"/>
+<label x="78.74" y="-58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D4" class="0">
@@ -8497,13 +8501,9 @@ Relative Humidity</text>
 <label x="17.78" y="-45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="C8" gate="G$1" pin="2"/>
-<pinref part="R21" gate="G$1" pin="1"/>
-<wire x1="78.74" y1="-63.5" x2="78.74" y2="-58.42" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="-58.42" x2="76.2" y2="-58.42" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="-58.42" x2="81.28" y2="-58.42" width="0.1524" layer="91"/>
-<junction x="78.74" y="-58.42"/>
-<label x="78.74" y="-58.42" size="1.778" layer="95"/>
+<pinref part="U7" gate="G$1" pin="TX"/>
+<wire x1="73.66" y1="104.14" x2="71.12" y2="104.14" width="0.1524" layer="91"/>
+<label x="71.12" y="104.14" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="A2" class="0">
