@@ -7291,12 +7291,13 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <part name="R21" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K"/>
 <part name="SUPPLY21" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="U$7" library="adafruit" deviceset="FIDUCIAL" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="134.62" y="129.54" size="2.54" layer="94" font="vector">Light Intensity</text>
-<text x="147.32" y="78.74" size="2.54" layer="94" font="vector" align="bottom-center">tVOCs and Derived CO2
+<text x="147.32" y="76.2" size="2.54" layer="94" font="vector" align="bottom-center">tVOCs and Derived CO2
 (IAQ-Core)</text>
 <text x="203.2" y="129.54" size="2.54" layer="94" font="vector">Air Pressure</text>
 <text x="-60.96" y="78.74" size="2.54" layer="94" font="vector">Sound Intensity</text>
@@ -7313,7 +7314,7 @@ Relative Humidity</text>
 <text x="257.556" y="-102.362" size="2.54" layer="94" font="vector" ratio="10">0.5.7</text>
 <text x="248.666" y="-87.122" size="2.54" layer="94" font="vector" ratio="10">github.crtlabs.org</text>
 <text x="157.48" y="101.6" size="1.778" layer="97">0x29</text>
-<text x="208.28" y="78.74" size="2.54" layer="94" font="vector">RGB LED</text>
+<text x="208.28" y="76.2" size="2.54" layer="94" font="vector">RGB LED</text>
 <text x="231.14" y="33.02" size="2.54" layer="94" font="vector">I2C Headers</text>
 <text x="73.66" y="129.54" size="2.54" layer="94" font="vector">PM2.5 sensor</text>
 <text x="292.1" y="83.82" size="2.54" layer="94" font="vector">RFM69HCW</text>
@@ -7408,7 +7409,7 @@ Relative Humidity</text>
 <instance part="GND6" gate="1" x="215.9" y="99.06"/>
 <instance part="SUPPLY10" gate="G$1" x="195.58" y="121.92"/>
 <instance part="SUPPLY12" gate="G$1" x="241.3" y="121.92"/>
-<instance part="H1" gate="G$1" x="223.52" y="-101.6"/>
+<instance part="H1" gate="G$1" x="220.98" y="-96.52"/>
 <instance part="H2" gate="G$1" x="231.14" y="-96.52"/>
 <instance part="FRAME1" gate="G$1" x="-71.12" y="-116.84"/>
 <instance part="U$1" gate="G$1" x="231.14" y="-101.6"/>
@@ -7430,7 +7431,7 @@ Relative Humidity</text>
 <instance part="U11" gate="G$1" x="284.48" y="63.5"/>
 <instance part="GND5" gate="1" x="302.26" y="50.8"/>
 <instance part="SUPPLY3" gate="G$1" x="264.16" y="78.74"/>
-<instance part="H3" gate="G$1" x="223.52" y="-96.52"/>
+<instance part="H3" gate="G$1" x="226.06" y="-96.52"/>
 <instance part="TC1" gate="A" x="-35.56" y="109.22" rot="R180"/>
 <instance part="U4" gate="G$1" x="27.94" y="109.22"/>
 <instance part="D1" gate="G$1" x="127" y="-43.18"/>
@@ -7502,6 +7503,7 @@ Relative Humidity</text>
 <instance part="R21" gate="G$1" x="71.12" y="-58.42" rot="R180"/>
 <instance part="SUPPLY21" gate="G$1" x="63.5" y="-43.18"/>
 <instance part="GND15" gate="1" x="63.5" y="-76.2"/>
+<instance part="U$7" gate="G$1" x="223.52" y="-101.6"/>
 </instances>
 <busses>
 </busses>

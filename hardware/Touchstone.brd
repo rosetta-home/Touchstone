@@ -2091,7 +2091,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="H1" library="SparkFun-Electromechanical" package="STAND-OFF" value="STAND-OFF" x="2.54" y="48.26" smashed="yes"/>
 <element name="H2" library="SparkFun-Electromechanical" package="STAND-OFF" value="STAND-OFF" x="2.54" y="2.54" smashed="yes"/>
 <element name="U$1" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="5.9436" y="48.5394"/>
-<element name="U$2" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="1.905" y="9.8298"/>
+<element name="U$2" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="6.6802" y="2.6924"/>
 <element name="U$3" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="33.4518" y="47.3964"/>
 <element name="U10" library="TSL2591" package="DFN6_TAOS" value="TSL2591" x="25.4" y="2.6924" smashed="yes" rot="R180">
 <attribute name="MPN" value="TSL25911FN " x="25.4" y="2.6924" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2283,6 +2283,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="R21" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="10K" x="6.096" y="44.8564" smashed="yes" rot="R90">
 <attribute name="NAME" x="7.3469" y="45.0342" size="0.6096" layer="121" font="vector" rot="R90" align="bottom-center"/>
 </element>
+<element name="U$7" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="37.2872" y="11.4554"/>
 </elements>
 <signals>
 <signal name="GND">
