@@ -55,9 +55,9 @@
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -96,7 +96,7 @@
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="yes"/>
 <layer number="121" name="_tsilk" color="25" fill="1" visible="yes" active="yes"/>
-<layer number="122" name="_bsilk" color="3" fill="1" visible="no" active="yes"/>
+<layer number="122" name="_bsilk" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
@@ -157,10 +157,10 @@
 </layers>
 <board>
 <plain>
-<text x="4.699" y="19.8628" size="1.016" layer="122" font="vector" ratio="16" rot="MR90" align="center-left">Touchstone</text>
+<text x="9.271" y="19.1516" size="1.016" layer="122" font="vector" ratio="16" rot="MR90" align="center-right">Touchstone</text>
 <text x="30.9372" y="49.5046" size="0.6096" layer="122" font="vector" rot="MR0">Designed by Akram Ali</text>
-<text x="3.0988" y="19.939" size="0.6096" layer="122" font="vector" rot="MR90">v0.5.7 | August 2017</text>
-<text x="2.5654" y="19.939" size="0.8128" layer="122" font="vector" ratio="12" rot="MR270" align="bottom-right">crtlabs.org</text>
+<text x="7.6962" y="19.1516" size="0.6096" layer="122" font="vector" rot="MR90" align="center-right">v0.5.7 | August 2017</text>
+<text x="6.5278" y="19.1516" size="0.8128" layer="122" font="vector" ratio="12" rot="MR270" align="center-left">crtlabs.org</text>
 <rectangle x1="1.3462" y1="12.8524" x2="1.7526" y2="12.9032" layer="122" rot="R90"/>
 <rectangle x1="1.3208" y1="12.827" x2="1.8796" y2="12.8778" layer="122" rot="R90"/>
 <rectangle x1="1.3462" y1="12.8524" x2="1.9558" y2="12.9032" layer="122" rot="R90"/>
