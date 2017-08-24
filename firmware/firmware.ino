@@ -1,4 +1,4 @@
-// v0.56 - 7/20/2017
+// v0.56c - 8/24/2017
 // Developed by Akram Ali
 
 // www.crtlabs.org
@@ -59,7 +59,7 @@ byte cmd[9] = {0xFF,0x01,0x86,0x00,0x00,0x00,0x00,0x00,0x79};
 unsigned char response[18]; // expect a 9 bytes response, give twice the size just in case things go crazy, it reduces likelyhood of crash/buffer overrun
 
 // define PMS7003 global variables
-SoftwareSerial mySerial2(3, 4); // RX, TX
+SoftwareSerial mySerial2(A1, 4); // RX, TX
 char buf[31];
 long CF1PM01Value,CF1PM25Value,CF1PM10Value,atmPM01Value,atmPM25Value,atmPM10Value,Partcount0_3,Partcount0_5,Partcount1_0,Partcount2_5,Partcount5_0,Partcount10;
 
