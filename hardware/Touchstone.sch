@@ -7378,7 +7378,7 @@ Diode with low voltage drop</description>
 <part name="SUPPLY7" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="U8" library="linear" deviceset="MCP1703" device="CB">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value="MCP1703T-2502E/CB"/>
+<attribute name="MPN" value="MCP1703T-3302E/CB"/>
 <attribute name="OC_NEWARK" value="18T9177"/>
 </part>
 <part name="C1" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF">
@@ -7388,7 +7388,7 @@ Diode with low voltage drop</description>
 <part name="SUPPLY8" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="SUPPLY11" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="J3" library="SparkFun-Connectors" deviceset="USB" device="-MICROB">
-<attribute name="MPN" value="47346-0001"/>
+<attribute name="MPN" value="ZX62-B-5PA(33)"/>
 </part>
 <part name="RX" library="adafruit" deviceset="LED" device="CHIPLED_0805">
 <attribute name="MF" value=""/>
@@ -7426,108 +7426,242 @@ Diode with low voltage drop</description>
 <part name="C4" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="10uF">
 <attribute name="MPN" value="CC0805KKX5R6BB106"/>
 </part>
-<part name="X1" library="SparkFun" deviceset="RESONATOR" device="SMD" value="16 MHz"/>
-<part name="U7" library="Amphenol" deviceset="PMS7003" device=""/>
-<part name="U11" library="SparkFun-RF" deviceset="RFM69H" device="CW-915" value="915MHz"/>
+<part name="X1" library="SparkFun" deviceset="RESONATOR" device="SMD" value="16 MHz">
+<attribute name="MPN" value="CSTCE16M0V53-R0"/>
+</part>
+<part name="U7" library="Amphenol" deviceset="PMS7003" device="">
+<attribute name="MPN" value="20021311-00012T4LF"/>
+</part>
+<part name="U11" library="SparkFun-RF" deviceset="RFM69H" device="CW-915" value="915MHz">
+<attribute name="MPN" value="RFM69HCW"/>
+</part>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="H3" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
 <part name="TC1" library="TagConnect" deviceset="TC2030-IDC" device="-NL"/>
-<part name="U4" library="SparkFun-Sensors" deviceset="SI7021" device=""/>
-<part name="D1" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_DIODE-SCHOTTKY" device="SOD-123" value="SOD123"/>
-<part name="U2" library="ftdi_ft231xq-r" deviceset="FT231XQ-R" device=""/>
-<part name="C12" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF"/>
-<part name="C15" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF"/>
-<part name="R5" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K"/>
-<part name="R6" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K"/>
-<part name="R13" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K"/>
-<part name="C6" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF"/>
-<part name="C7" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF"/>
-<part name="C11" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF"/>
-<part name="R7" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K"/>
-<part name="R11" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="27"/>
-<part name="R15" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="27"/>
-<part name="R17" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="470"/>
-<part name="R18" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="470"/>
-<part name="R19" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="1K"/>
-<part name="R20" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="1K"/>
+<part name="U4" library="SparkFun-Sensors" deviceset="SI7021" device="">
+<attribute name="MPN" value="SI7021-A20-GM1"/>
+</part>
+<part name="D1" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_DIODE-SCHOTTKY" device="SOD-123" value="SOD123">
+<attribute name="MPN" value="SD103AW-13-F"/>
+</part>
+<part name="U2" library="ftdi_ft231xq-r" deviceset="FT231XQ-R" device="">
+<attribute name="MPN" value="FT231XQ-R"/>
+</part>
+<part name="C12" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF">
+<attribute name="MPN" value="GRM155R71C104KA88J"/>
+</part>
+<part name="C15" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF">
+<attribute name="MPN" value="GRM155R71C104KA88J"/>
+</part>
+<part name="R5" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K">
+<attribute name="MPN" value="RC0402JR-0710KL"/>
+</part>
+<part name="R6" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K">
+<attribute name="MPN" value="RC0402JR-0710KL"/>
+</part>
+<part name="R13" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K">
+<attribute name="MPN" value="RC0402JR-0710KL"/>
+</part>
+<part name="C6" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF">
+<attribute name="MPN" value="GRM155R71C104KA88J"/>
+</part>
+<part name="C7" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF">
+<attribute name="MPN" value="GRM155R71C104KA88J"/>
+</part>
+<part name="C11" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF">
+<attribute name="MPN" value="GRM155R71C104KA88J"/>
+</part>
+<part name="R7" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K">
+<attribute name="MPN" value="RC0402JR-0710KL"/>
+</part>
+<part name="R11" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="27">
+<attribute name="MPN" value="RC0402JR-0727RL"/>
+</part>
+<part name="R15" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="27">
+<attribute name="MPN" value="RC0402JR-0727RL"/>
+</part>
+<part name="R17" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="470">
+<attribute name="MPN" value="RC0402JR-07470RL"/>
+</part>
+<part name="R18" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="470">
+<attribute name="MPN" value="RC0402JR-07470RL"/>
+</part>
+<part name="R19" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="1K">
+<attribute name="MPN" value="RC0402JR-071KL"/>
+</part>
+<part name="R20" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="1K">
+<attribute name="MPN" value="RC0402JR-071KL"/>
+</part>
 <part name="J2" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 <part name="U12" library="MH-z19" deviceset="MH-Z19" device="">
 <attribute name="MPN" value="MH-z19"/>
 </part>
-<part name="U5" library="ATMEGA328P-MU" deviceset="ATMEGA328P-MU" device=""/>
+<part name="U5" library="ATMEGA328P-MU" deviceset="ATMEGA328P-MU" device="">
+<attribute name="MPN" value="ATMEGA328P-MU"/>
+</part>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY13" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="C16" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF"/>
-<part name="U13" library="CCS811" deviceset="CCS811" device="-I2C"/>
+<part name="C16" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF">
+<attribute name="MPN" value="GRM155R71C104KA88J"/>
+</part>
+<part name="U13" library="CCS811" deviceset="CCS811" device="-I2C">
+<attribute name="MPN" value="CCS811"/>
+</part>
 <part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C17" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF"/>
-<part name="JP1" library="adafruit@1" deviceset="PINHD-1X1" device="CB" value="Antenna"/>
-<part name="U1" library="NeoPixel Nano 2427" deviceset="NEOPIXEL_NANO_2427" device=""/>
-<part name="C18" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="1uF"/>
-<part name="R4" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="470"/>
-<part name="U14" library="IAQ-Core" deviceset="IAQ-CORE-C" device=""/>
+<part name="C17" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF">
+<attribute name="MPN" value="GRM155R71C104KA88J"/>
+</part>
+<part name="JP1" library="adafruit@1" deviceset="PINHD-1X1" device="CB" value="Antenna">
+<attribute name="MPN" value="Helical antenna"/>
+</part>
+<part name="U1" library="NeoPixel Nano 2427" deviceset="NEOPIXEL_NANO_2427" device="">
+<attribute name="MPN" value="3484"/>
+</part>
+<part name="C18" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="1uF">
+<attribute name="MPN" value="CC0402KRX5R6BB105"/>
+</part>
+<part name="R4" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="470">
+<attribute name="MPN" value="RC0402JR-07470RL"/>
+</part>
+<part name="U14" library="IAQ-Core" deviceset="IAQ-CORE-C" device="">
+<attribute name="MPN" value="IAQ-CORE-C"/>
+</part>
 <part name="SUPPLY16" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND11" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C3" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF"/>
-<part name="C19" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF"/>
-<part name="C20" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF"/>
-<part name="C2" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="1uF"/>
+<part name="C3" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF">
+<attribute name="MPN" value="GRM155R71C104KA88J"/>
+</part>
+<part name="C19" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF">
+<attribute name="MPN" value="GRM155R71C104KA88J"/>
+</part>
+<part name="C20" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF">
+<attribute name="MPN" value="GRM155R71C104KA88J"/>
+</part>
+<part name="C2" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="1uF">
+<attribute name="MPN" value="CC0402KRX5R6BB105"/>
+</part>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="R9" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="100K"/>
-<part name="U15" library="VLP-450-F" deviceset="VLP-450-F" device=""/>
-<part name="U16" library="VLP-450-F" deviceset="VLP-450-F" device=""/>
-<part name="C5" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF"/>
+<part name="R9" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="100K">
+<attribute name="MPN" value="RC0402FR-07100KL"/>
+</part>
+<part name="U15" library="VLP-450-F" deviceset="VLP-450-F" device="">
+<attribute name="MPN" value="VLP-650-F"/>
+</part>
+<part name="U16" library="VLP-450-F" deviceset="VLP-450-F" device="">
+<attribute name="MPN" value="VLP-550-F"/>
+</part>
+<part name="C5" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF">
+<attribute name="MPN" value="GRM155R71C104KA88J"/>
+</part>
 <part name="SUPPLY17" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND13" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R10" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K"/>
+<part name="R10" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K">
+<attribute name="MPN" value="RC0402JR-0710KL"/>
+</part>
 <part name="SUPPLY18" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="U$4" library="0878980426" deviceset="0878980426" device=""/>
-<part name="U$5" library="0878980426" deviceset="0878980426" device=""/>
-<part name="R12" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="100K"/>
-<part name="R14" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="100K"/>
+<part name="U$4" library="0878980426" deviceset="0878980426" device="">
+<attribute name="MPN" value="0878980426"/>
+</part>
+<part name="U$5" library="0878980426" deviceset="0878980426" device="">
+<attribute name="MPN" value="0878980426"/>
+</part>
+<part name="R12" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="100K">
+<attribute name="MPN" value="RC0402FR-07100KL"/>
+</part>
+<part name="R14" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="100K">
+<attribute name="MPN" value="RC0402FR-07100KL"/>
+</part>
 <part name="SUPPLY19" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="SUPPLY20" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="U$6" library="CONN_HDR_1.27MM_SMD_4POS" deviceset="CONN_HDR_1.27MM_SMD_4POS" device=""/>
-<part name="S1" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-SMD-6.0X3.5MM"/>
-<part name="C8" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF"/>
-<part name="R16" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K"/>
-<part name="R21" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K"/>
+<part name="U$6" library="CONN_HDR_1.27MM_SMD_4POS" deviceset="CONN_HDR_1.27MM_SMD_4POS" device="">
+<attribute name="MPN" value="M50-3630442"/>
+</part>
+<part name="S1" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-SMD-6.0X3.5MM">
+<attribute name="MPN" value="RS-032G05A3-SM RT"/>
+</part>
+<part name="C8" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF">
+<attribute name="MPN" value="GRM155R71C104KA88J"/>
+</part>
+<part name="R16" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K">
+<attribute name="MPN" value="RC0402JR-0710KL"/>
+</part>
+<part name="R21" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K">
+<attribute name="MPN" value="RC0402JR-0710KL"/>
+</part>
 <part name="SUPPLY21" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="U$7" library="adafruit" deviceset="FIDUCIAL" device=""/>
-<part name="C9" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="10uF"/>
-<part name="R22" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="1K"/>
-<part name="R23" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="2.2K"/>
-<part name="R24" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="470K"/>
+<part name="C9" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="10uF">
+<attribute name="MPN" value="GRJ155R60J106ME11D"/>
+</part>
+<part name="R22" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="1K">
+<attribute name="MPN" value="RC0402JR-071KL"/>
+</part>
+<part name="R23" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="2.2K">
+<attribute name="MPN" value="RC0402FR-072K2L"/>
+</part>
+<part name="R24" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="470K">
+<attribute name="MPN" value="RC0402JR-07470KL"/>
+</part>
 <part name="SUPPLY22" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
-<part name="C22" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="10uF"/>
-<part name="R25" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="100"/>
-<part name="R26" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K"/>
-<part name="R27" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="1K"/>
+<part name="C22" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="10uF">
+<attribute name="MPN" value="GRJ155R60J106ME11D"/>
+</part>
+<part name="R25" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="100">
+<attribute name="MPN" value="RC0402FR-07100RL"/>
+</part>
+<part name="R26" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K">
+<attribute name="MPN" value="RC0402JR-0710KL"/>
+</part>
+<part name="R27" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="1K">
+<attribute name="MPN" value="RC0402JR-071KL"/>
+</part>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
-<part name="C23" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="1uF"/>
+<part name="C23" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="1uF">
+<attribute name="MPN" value="CC0402KRX5R6BB105"/>
+</part>
 <part name="SUPPLY23" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
-<part name="U17" library="LMV324" deviceset="LMV324QT" device=""/>
+<part name="U17" library="LMV324" deviceset="LMV324QT" device="">
+<attribute name="MPN" value="LM324QT"/>
+</part>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
-<part name="MK1" library="CMC-4015-40P" deviceset="MIC2" device="-PTH"/>
-<part name="R28" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K"/>
-<part name="R29" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K"/>
+<part name="MK1" library="CMC-4015-40P" deviceset="MIC2" device="-PTH">
+<attribute name="MPN" value="TOM-1545P-R"/>
+</part>
+<part name="R28" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K">
+<attribute name="MPN" value="RC0402JR-0710KL"/>
+</part>
+<part name="R29" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K">
+<attribute name="MPN" value="RC0402JR-0710KL"/>
+</part>
 <part name="SUPPLY25" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
-<part name="C24" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="1uF"/>
-<part name="R30" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K"/>
+<part name="C24" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="1uF">
+<attribute name="MPN" value="CC0402KRX5R6BB105"/>
+</part>
+<part name="R30" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K">
+<attribute name="MPN" value="RC0402JR-0710KL"/>
+</part>
 <part name="SUPPLY26" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
-<part name="R31" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="22K"/>
-<part name="R32" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="100"/>
+<part name="R31" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="22K">
+<attribute name="MPN" value="RC0402JR-0722KL"/>
+</part>
+<part name="R32" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="100">
+<attribute name="MPN" value="RC0402FR-07100RL"/>
+</part>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
-<part name="D3" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-RB751S40" value="120mA/40V/370mV"/>
-<part name="D4" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-RB751S40" value="120mA/40V/370mV"/>
+<part name="D3" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-RB751S40" value="120mA/40V/370mV">
+<attribute name="MPN" value="RB751S40T1G"/>
+</part>
+<part name="D4" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-RB751S40" value="120mA/40V/370mV">
+<attribute name="MPN" value="RB751S40T1G"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -7650,110 +7784,244 @@ Relative Humidity</text>
 <instance part="C4" gate="G$1" x="274.32" y="-45.72">
 <attribute name="MPN" x="274.32" y="-45.72" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
-<instance part="X1" gate="G$1" x="-38.1" y="-78.74"/>
-<instance part="U7" gate="G$1" x="83.82" y="111.76"/>
-<instance part="U11" gate="G$1" x="284.48" y="63.5"/>
+<instance part="X1" gate="G$1" x="-38.1" y="-78.74">
+<attribute name="MPN" x="-38.1" y="-78.74" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U7" gate="G$1" x="83.82" y="111.76">
+<attribute name="MPN" x="83.82" y="111.76" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U11" gate="G$1" x="284.48" y="63.5">
+<attribute name="MPN" x="284.48" y="63.5" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND5" gate="1" x="302.26" y="50.8"/>
 <instance part="SUPPLY3" gate="G$1" x="264.16" y="78.74"/>
 <instance part="H3" gate="G$1" x="226.06" y="-96.52"/>
 <instance part="TC1" gate="A" x="-35.56" y="109.22" rot="R180"/>
-<instance part="U4" gate="G$1" x="27.94" y="109.22"/>
-<instance part="D1" gate="G$1" x="127" y="-43.18"/>
-<instance part="U2" gate="G$1" x="160.02" y="-68.58"/>
-<instance part="C12" gate="G$1" x="-60.96" y="-33.02" rot="R180"/>
-<instance part="C15" gate="G$1" x="-53.34" y="-76.2" rot="R180"/>
-<instance part="R5" gate="G$1" x="-45.72" y="-35.56" rot="R90"/>
-<instance part="R6" gate="G$1" x="30.48" y="-45.72" rot="R90"/>
-<instance part="R13" gate="G$1" x="40.64" y="-45.72" rot="R90"/>
-<instance part="C6" gate="G$1" x="119.38" y="-55.88" rot="R180"/>
-<instance part="C7" gate="G$1" x="134.62" y="111.76" rot="R180"/>
-<instance part="C11" gate="G$1" x="284.48" y="-43.18" rot="R180"/>
-<instance part="R7" gate="G$1" x="264.16" y="68.58" rot="R90"/>
-<instance part="R11" gate="G$1" x="119.38" y="-76.2" rot="R180"/>
-<instance part="R15" gate="G$1" x="119.38" y="-73.66"/>
-<instance part="R17" gate="G$1" x="198.12" y="-81.28" rot="R180"/>
-<instance part="R18" gate="G$1" x="205.74" y="-78.74"/>
-<instance part="R19" gate="G$1" x="193.04" y="-53.34" rot="R180"/>
-<instance part="R20" gate="G$1" x="185.42" y="-55.88" rot="R180"/>
+<instance part="U4" gate="G$1" x="27.94" y="109.22">
+<attribute name="MPN" x="27.94" y="109.22" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="D1" gate="G$1" x="127" y="-43.18">
+<attribute name="MPN" x="127" y="-43.18" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U2" gate="G$1" x="160.02" y="-68.58">
+<attribute name="MPN" x="160.02" y="-68.58" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C12" gate="G$1" x="-60.96" y="-33.02" rot="R180">
+<attribute name="MPN" x="-60.96" y="-33.02" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="C15" gate="G$1" x="-53.34" y="-76.2" rot="R180">
+<attribute name="MPN" x="-53.34" y="-76.2" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="R5" gate="G$1" x="-45.72" y="-35.56" rot="R90">
+<attribute name="MPN" x="-45.72" y="-35.56" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R6" gate="G$1" x="30.48" y="-45.72" rot="R90">
+<attribute name="MPN" x="30.48" y="-45.72" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R13" gate="G$1" x="40.64" y="-45.72" rot="R90">
+<attribute name="MPN" x="40.64" y="-45.72" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="C6" gate="G$1" x="119.38" y="-55.88" rot="R180">
+<attribute name="MPN" x="119.38" y="-55.88" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="C7" gate="G$1" x="134.62" y="111.76" rot="R180">
+<attribute name="MPN" x="134.62" y="111.76" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="C11" gate="G$1" x="284.48" y="-43.18" rot="R180">
+<attribute name="MPN" x="284.48" y="-43.18" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="R7" gate="G$1" x="264.16" y="68.58" rot="R90">
+<attribute name="MPN" x="264.16" y="68.58" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R11" gate="G$1" x="119.38" y="-76.2" rot="R180">
+<attribute name="MPN" x="119.38" y="-76.2" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="R15" gate="G$1" x="119.38" y="-73.66">
+<attribute name="MPN" x="119.38" y="-73.66" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R17" gate="G$1" x="198.12" y="-81.28" rot="R180">
+<attribute name="MPN" x="198.12" y="-81.28" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="R18" gate="G$1" x="205.74" y="-78.74">
+<attribute name="MPN" x="205.74" y="-78.74" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R19" gate="G$1" x="193.04" y="-53.34" rot="R180">
+<attribute name="MPN" x="193.04" y="-53.34" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="R20" gate="G$1" x="185.42" y="-55.88" rot="R180">
+<attribute name="MPN" x="185.42" y="-55.88" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="J2" gate="G$1" x="264.16" y="-2.54"/>
 <instance part="U12" gate="G$1" x="271.78" y="127">
 <attribute name="MPN" x="271.78" y="127" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="U5" gate="G$1" x="-7.62" y="-71.12"/>
+<instance part="U5" gate="G$1" x="-7.62" y="-71.12">
+<attribute name="MPN" x="-7.62" y="-71.12" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND3" gate="1" x="15.24" y="104.14"/>
 <instance part="SUPPLY13" gate="G$1" x="15.24" y="114.3"/>
-<instance part="C16" gate="G$1" x="10.16" y="111.76" rot="R180"/>
-<instance part="U13" gate="G$1" x="134.62" y="0"/>
+<instance part="C16" gate="G$1" x="10.16" y="111.76" rot="R180">
+<attribute name="MPN" x="10.16" y="111.76" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="U13" gate="G$1" x="134.62" y="0">
+<attribute name="MPN" x="134.62" y="0" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND14" gate="1" x="292.1" y="111.76"/>
-<instance part="C17" gate="G$1" x="287.02" y="116.84" rot="R270"/>
-<instance part="JP1" gate="G$1" x="304.8" y="66.04" rot="R90"/>
-<instance part="U1" gate="G$1" x="215.9" y="63.5"/>
-<instance part="C18" gate="G$1" x="195.58" y="63.5" rot="R180"/>
-<instance part="R4" gate="G$1" x="233.68" y="68.58" rot="R270"/>
-<instance part="U14" gate="G$1" x="149.86" y="60.96"/>
+<instance part="C17" gate="G$1" x="287.02" y="116.84" rot="R270">
+<attribute name="MPN" x="287.02" y="116.84" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="JP1" gate="G$1" x="304.8" y="66.04" rot="R90">
+<attribute name="MPN" x="304.8" y="66.04" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="U1" gate="G$1" x="215.9" y="63.5">
+<attribute name="MPN" x="215.9" y="63.5" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C18" gate="G$1" x="195.58" y="63.5" rot="R180">
+<attribute name="MPN" x="195.58" y="63.5" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="R4" gate="G$1" x="233.68" y="68.58" rot="R270">
+<attribute name="MPN" x="233.68" y="68.58" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="U14" gate="G$1" x="149.86" y="60.96">
+<attribute name="MPN" x="149.86" y="60.96" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="SUPPLY16" gate="G$1" x="134.62" y="66.04"/>
 <instance part="GND11" gate="1" x="134.62" y="55.88"/>
-<instance part="C3" gate="G$1" x="129.54" y="63.5" rot="R180"/>
-<instance part="C19" gate="G$1" x="241.3" y="114.3" rot="R180"/>
-<instance part="C20" gate="G$1" x="195.58" y="116.84" rot="R180"/>
-<instance part="C2" gate="G$1" x="167.64" y="0" rot="R180"/>
+<instance part="C3" gate="G$1" x="129.54" y="63.5" rot="R180">
+<attribute name="MPN" x="129.54" y="63.5" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="C19" gate="G$1" x="241.3" y="114.3" rot="R180">
+<attribute name="MPN" x="241.3" y="114.3" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="C20" gate="G$1" x="195.58" y="116.84" rot="R180">
+<attribute name="MPN" x="195.58" y="116.84" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="C2" gate="G$1" x="167.64" y="0" rot="R180">
+<attribute name="MPN" x="167.64" y="0" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="GND8" gate="1" x="147.32" y="-7.62"/>
 <instance part="SUPPLY2" gate="G$1" x="175.26" y="7.62"/>
 <instance part="SUPPLY5" gate="G$1" x="127" y="25.4"/>
-<instance part="R9" gate="G$1" x="127" y="20.32" rot="R270"/>
-<instance part="U15" gate="G$1" x="226.06" y="-73.66"/>
-<instance part="U16" gate="G$1" x="226.06" y="-83.82"/>
-<instance part="C5" gate="G$1" x="38.1" y="-71.12" rot="R180"/>
+<instance part="R9" gate="G$1" x="127" y="20.32" rot="R270">
+<attribute name="MPN" x="127" y="20.32" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="U15" gate="G$1" x="226.06" y="-73.66">
+<attribute name="MPN" x="226.06" y="-73.66" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U16" gate="G$1" x="226.06" y="-83.82">
+<attribute name="MPN" x="226.06" y="-83.82" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C5" gate="G$1" x="38.1" y="-71.12" rot="R180">
+<attribute name="MPN" x="38.1" y="-71.12" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="SUPPLY17" gate="G$1" x="38.1" y="-66.04"/>
 <instance part="GND13" gate="1" x="38.1" y="-81.28"/>
-<instance part="R10" gate="G$1" x="99.06" y="101.6" rot="R90"/>
+<instance part="R10" gate="G$1" x="99.06" y="101.6" rot="R90">
+<attribute name="MPN" x="99.06" y="101.6" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="SUPPLY18" gate="G$1" x="109.22" y="99.06"/>
-<instance part="U$4" gate="G$1" x="259.08" y="101.6"/>
-<instance part="U$5" gate="G$1" x="289.56" y="101.6"/>
-<instance part="R12" gate="G$1" x="121.92" y="20.32" rot="R270"/>
-<instance part="R14" gate="G$1" x="172.72" y="20.32" rot="R270"/>
+<instance part="U$4" gate="G$1" x="259.08" y="101.6">
+<attribute name="MPN" x="259.08" y="101.6" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U$5" gate="G$1" x="289.56" y="101.6">
+<attribute name="MPN" x="289.56" y="101.6" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R12" gate="G$1" x="121.92" y="20.32" rot="R270">
+<attribute name="MPN" x="121.92" y="20.32" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="R14" gate="G$1" x="172.72" y="20.32" rot="R270">
+<attribute name="MPN" x="172.72" y="20.32" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
 <instance part="SUPPLY19" gate="G$1" x="121.92" y="25.4"/>
 <instance part="SUPPLY20" gate="G$1" x="172.72" y="25.4"/>
-<instance part="U$6" gate="G$1" x="264.16" y="12.7"/>
-<instance part="S1" gate="G$1" x="63.5" y="-66.04" rot="R90"/>
-<instance part="C8" gate="G$1" x="78.74" y="-66.04" rot="R180"/>
-<instance part="R16" gate="G$1" x="63.5" y="-50.8" rot="R90"/>
-<instance part="R21" gate="G$1" x="71.12" y="-58.42" rot="R180"/>
+<instance part="U$6" gate="G$1" x="264.16" y="12.7">
+<attribute name="MPN" x="264.16" y="12.7" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="S1" gate="G$1" x="63.5" y="-66.04" rot="R90">
+<attribute name="MPN" x="63.5" y="-66.04" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="C8" gate="G$1" x="78.74" y="-66.04" rot="R180">
+<attribute name="MPN" x="78.74" y="-66.04" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="R16" gate="G$1" x="63.5" y="-50.8" rot="R90">
+<attribute name="MPN" x="63.5" y="-50.8" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R21" gate="G$1" x="71.12" y="-58.42" rot="R180">
+<attribute name="MPN" x="71.12" y="-58.42" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="SUPPLY21" gate="G$1" x="63.5" y="-43.18"/>
 <instance part="GND15" gate="1" x="63.5" y="-76.2"/>
 <instance part="U$7" gate="G$1" x="223.52" y="-101.6"/>
-<instance part="C9" gate="G$1" x="-35.56" y="43.18" rot="R90"/>
-<instance part="R22" gate="G$1" x="-27.94" y="43.18"/>
-<instance part="R23" gate="G$1" x="-45.72" y="50.8" rot="R90"/>
-<instance part="R24" gate="G$1" x="-7.62" y="60.96"/>
+<instance part="C9" gate="G$1" x="-35.56" y="43.18" rot="R90">
+<attribute name="MPN" x="-35.56" y="43.18" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R22" gate="G$1" x="-27.94" y="43.18">
+<attribute name="MPN" x="-27.94" y="43.18" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R23" gate="G$1" x="-45.72" y="50.8" rot="R90">
+<attribute name="MPN" x="-45.72" y="50.8" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R24" gate="G$1" x="-7.62" y="60.96">
+<attribute name="MPN" x="-7.62" y="60.96" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="SUPPLY22" gate="G$1" x="-45.72" y="58.42"/>
-<instance part="C22" gate="G$1" x="63.5" y="33.02" rot="R180"/>
-<instance part="R25" gate="G$1" x="55.88" y="38.1"/>
-<instance part="R26" gate="G$1" x="68.58" y="30.48" rot="R90"/>
-<instance part="R27" gate="G$1" x="78.74" y="50.8" rot="R180"/>
+<instance part="C22" gate="G$1" x="63.5" y="33.02" rot="R180">
+<attribute name="MPN" x="63.5" y="33.02" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="R25" gate="G$1" x="55.88" y="38.1">
+<attribute name="MPN" x="55.88" y="38.1" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R26" gate="G$1" x="68.58" y="30.48" rot="R90">
+<attribute name="MPN" x="68.58" y="30.48" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R27" gate="G$1" x="78.74" y="50.8" rot="R180">
+<attribute name="MPN" x="78.74" y="50.8" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="GND16" gate="1" x="63.5" y="22.86"/>
 <instance part="GND17" gate="1" x="68.58" y="22.86"/>
-<instance part="C23" gate="G$1" x="-40.64" y="15.24" rot="R180"/>
+<instance part="C23" gate="G$1" x="-40.64" y="15.24" rot="R180">
+<attribute name="MPN" x="-40.64" y="15.24" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="SUPPLY23" gate="G$1" x="-40.64" y="20.32"/>
 <instance part="GND18" gate="1" x="-40.64" y="5.08"/>
 <instance part="U17" gate="G$2" x="25.4" y="38.1"/>
 <instance part="U17" gate="G$3" x="73.66" y="40.64"/>
 <instance part="GND20" gate="1" x="-58.42" y="38.1"/>
-<instance part="MK1" gate="&gt;NAME" x="-48.26" y="38.1" rot="R180"/>
-<instance part="R28" gate="G$1" x="-20.32" y="30.48" rot="R90"/>
-<instance part="R29" gate="G$1" x="-20.32" y="50.8" rot="R90"/>
+<instance part="MK1" gate="&gt;NAME" x="-48.26" y="38.1" rot="R180">
+<attribute name="MPN" x="-48.26" y="38.1" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="R28" gate="G$1" x="-20.32" y="30.48" rot="R90">
+<attribute name="MPN" x="-20.32" y="30.48" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R29" gate="G$1" x="-20.32" y="50.8" rot="R90">
+<attribute name="MPN" x="-20.32" y="50.8" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="SUPPLY25" gate="G$1" x="-20.32" y="58.42"/>
 <instance part="GND21" gate="1" x="-20.32" y="20.32"/>
-<instance part="C24" gate="G$1" x="10.16" y="40.64" rot="R90"/>
-<instance part="R30" gate="G$1" x="17.78" y="40.64" rot="R180"/>
-<instance part="U17" gate="G$1" x="-12.7" y="40.64"/>
+<instance part="C24" gate="G$1" x="10.16" y="40.64" rot="R90">
+<attribute name="MPN" x="10.16" y="40.64" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R30" gate="G$1" x="17.78" y="40.64" rot="R180">
+<attribute name="MPN" x="17.78" y="40.64" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="U17" gate="G$1" x="-12.7" y="40.64">
+<attribute name="MPN" x="-12.7" y="40.64" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="SUPPLY26" gate="G$1" x="-7.62" y="50.8"/>
 <instance part="GND22" gate="1" x="-7.62" y="27.94"/>
-<instance part="R31" gate="G$1" x="35.56" y="55.88" rot="R180"/>
-<instance part="R32" gate="G$1" x="101.6" y="40.64" rot="R180"/>
+<instance part="R31" gate="G$1" x="35.56" y="55.88" rot="R180">
+<attribute name="MPN" x="35.56" y="55.88" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="R32" gate="G$1" x="101.6" y="40.64" rot="R180">
+<attribute name="MPN" x="101.6" y="40.64" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="GND23" gate="1" x="22.86" y="30.48"/>
-<instance part="D3" gate="G$1" x="27.94" y="50.8"/>
-<instance part="D4" gate="G$1" x="45.72" y="38.1"/>
+<instance part="D3" gate="G$1" x="27.94" y="50.8">
+<attribute name="MPN" x="27.94" y="50.8" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="D4" gate="G$1" x="45.72" y="38.1">
+<attribute name="MPN" x="45.72" y="38.1" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
