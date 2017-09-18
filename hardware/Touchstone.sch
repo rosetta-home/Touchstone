@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<<<<<<< HEAD
 <eagle version="8.3.2">
-=======
-<eagle version="8.3.1">
->>>>>>> origin/master
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1417,7 +1413,7 @@ Source: http://www.osram.convergy.de/</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-Connectors" urn="urn:adsk.eagle:library:513">
+<library name="SparkFun-Connectors">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
 In this library you'll find connectors and sockets- basically anything that can be plugged into or onto.&lt;br&gt;&lt;br&gt;
 We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
@@ -2848,7 +2844,7 @@ github.com/akstudios</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-Aesthetics" urn="urn:adsk.eagle:library:507">
+<library name="SparkFun-Aesthetics">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
 In this library you'll find non-functional items- supply symbols, logos, notations, frame blocks, etc.&lt;br&gt;&lt;br&gt;
 We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
@@ -2900,12 +2896,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
-<library name="linear" urn="urn:adsk.eagle:library:262">
+<library name="linear">
 <description>&lt;b&gt;Linear Devices&lt;/b&gt;&lt;p&gt;
 Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="SOT23" urn="urn:adsk.eagle:footprint:16354/1" library_version="1">
+<package name="SOT23">
 <description>&lt;b&gt;SMALL OUTLINE TRANSISTOR&lt;/b&gt;&lt;p&gt;
 reflow soldering</description>
 <wire x1="-1.973" y1="1.983" x2="1.973" y2="1.983" width="0.0508" layer="39"/>
@@ -2930,7 +2926,7 @@ reflow soldering</description>
 <rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
 <rectangle x1="-0.5001" y1="-0.3" x2="0.5001" y2="0.3" layer="35"/>
 </package>
-<package name="SOT223" urn="urn:adsk.eagle:footprint:16157/1" library_version="1">
+<package name="SOT223">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
 <wire x1="3.2766" y1="1.778" x2="3.2766" y2="-1.778" width="0.2032" layer="21"/>
 <wire x1="3.2766" y1="-1.778" x2="-3.2766" y2="-1.778" width="0.2032" layer="21"/>
@@ -2956,17 +2952,8 @@ reflow soldering</description>
 <rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
 </package>
 </packages>
-<packages3d>
-<package3d name="SOT23" urn="urn:adsk.eagle:package:16489/2" type="model" library_version="2">
-<description>SMALL OUTLINE TRANSISTOR
-reflow soldering</description>
-</package3d>
-<package3d name="SOT223" urn="urn:adsk.eagle:package:16418/2" type="model" library_version="2">
-<description>Small Outline Transistor</description>
-</package3d>
-</packages3d>
 <symbols>
-<symbol name="78XX" urn="urn:adsk.eagle:symbol:16149/1" library_version="1">
+<symbol name="78XX">
 <wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.4064" layer="94"/>
 <wire x1="7.62" y1="-5.08" x2="7.62" y2="2.54" width="0.4064" layer="94"/>
 <wire x1="7.62" y1="2.54" x2="-7.62" y2="2.54" width="0.4064" layer="94"/>
@@ -2980,7 +2967,7 @@ reflow soldering</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MCP1703" urn="urn:adsk.eagle:component:16824/3" prefix="IC" library_version="2">
+<deviceset name="MCP1703" prefix="IC">
 <description>&lt;b&gt;250 mA, 16V, Low Quiescent Current LDO Regulator&lt;/b&gt;&lt;p&gt;
 Source: http://ww1.microchip.com/downloads/en/DeviceDoc/22049b.pdf</description>
 <gates>
@@ -2993,9 +2980,6 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/22049b.pdf</description>
 <connect gate="G$1" pin="VI" pad="1"/>
 <connect gate="G$1" pin="VO" pad="3"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:16418/2"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -3006,9 +2990,6 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/22049b.pdf</description>
 <connect gate="G$1" pin="VI" pad="3"/>
 <connect gate="G$1" pin="VO" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:16489/2"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -3017,7 +2998,7 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/22049b.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-Capacitors" urn="urn:adsk.eagle:library:510">
+<library name="SparkFun-Capacitors">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
 In this library you'll find resistors, capacitors, inductors, test points, jumper pads, etc.&lt;br&gt;&lt;br&gt;
 We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
@@ -3391,7 +3372,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-Sensors" urn="urn:adsk.eagle:library:534">
+<library name="SparkFun-Sensors">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
 In this library you'll find sensors- accelerometers, gyros, compasses, magnetometers, light sensors, imagers, temp sensors, etc.&lt;br&gt;&lt;br&gt;
 We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
@@ -3400,7 +3381,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;&lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
-<package name="DFN-6-3X3-SI7021" urn="urn:adsk.eagle:footprint:39886/1" library_version="1">
+<package name="DFN-6-3X3-SI7021">
 <description>&lt;h3&gt;6-Pin DFN w/ Center Pad (3 x 3 mm) - Designed for Si7021&lt;/h3&gt;
 &lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Sensors/Weather/Si7021.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Specifications:
@@ -3454,24 +3435,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="-1.651" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
 </packages>
-<packages3d>
-<package3d name="DFN-6-3X3-SI7021" urn="urn:adsk.eagle:package:39974/1" type="box" library_version="1">
-<description>6-Pin DFN w/ Center Pad (3 x 3 mm) - Designed for Si7021
-Datasheet
-Specifications:
-
-Pin Count: 6 (+ center pad)
-Area: 3.0 x 3.0 x 1.21 mm
-Pitch: 1.0 mm
-
-Devices Using:
-
-SI7021
-</description>
-</package3d>
-</packages3d>
 <symbols>
-<symbol name="SI7021" urn="urn:adsk.eagle:symbol:39885/1" library_version="1">
+<symbol name="SI7021">
 <description>&lt;h3&gt;Silicon Labs Si7021 I&lt;sup&gt;2&lt;/sup&gt;C Humidity and Temperature Sensor&lt;/h3&gt;
 &lt;p&gt;The Si7021 is a low-cost, easy-to-use, highly accurate, digital humidity and temperature sensor. This sensor is ideal for environmental sensing and data logging and perfect for build a weather stations or humidor control system. All you need are two lines for I2C communication, and you’ll have relative humidity readings and very accurate temperature readings as a bonus!&lt;/p&gt;</description>
 <wire x1="-7.62" y1="-2.54" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
@@ -3487,7 +3452,7 @@ SI7021
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="SI7021" urn="urn:adsk.eagle:component:40047/1" prefix="U" library_version="1">
+<deviceset name="SI7021" prefix="U">
 <description>&lt;h3&gt;Silicon Labs Si7021 I&lt;sup&gt;2&lt;/sup&gt;C Humidity and Temperature Sensor&lt;/h3&gt;
 &lt;p&gt;The Si7021 is a low-cost, easy-to-use, highly accurate, digital humidity and temperature sensor. This sensor is ideal for environmental sensing and data logging and perfect for build a weather stations or humidor control system. All you need are two lines for I2C communication, and you’ll have relative humidity readings and very accurate temperature readings as a bonus!&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Sensors/Weather/Si7021.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
@@ -3507,9 +3472,6 @@ SI7021
 <connect gate="G$1" pin="SCK" pad="SCK"/>
 <connect gate="G$1" pin="VDD" pad="VDD"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:39974/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-13093"/>
@@ -3594,7 +3556,7 @@ The library has been designed by&lt;a href="https://www.facebook.com/groups/eagl
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-Electromechanical" urn="urn:adsk.eagle:library:516">
+<library name="SparkFun-Electromechanical">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
 In this library you'll find anything that moves- switches, relays, buttons, potentiometers. Also, anything that goes on a board but isn't electrical in nature- screws, standoffs, etc.&lt;br&gt;&lt;br&gt;
 We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
@@ -3651,7 +3613,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-Retired" urn="urn:adsk.eagle:library:533">
+<library name="SparkFun-Retired">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
 In this library you'll find all manner of retired footprints for resistors, capacitors, board names, ICs, etc., that are no longer used in our catalog.&lt;br&gt;&lt;br&gt;
 We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
@@ -3866,18 +3828,18 @@ Please use FRAME-LEDGER/FRAME-LETTER for schematics now.</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="supply1" urn="urn:adsk.eagle:library:371">
+<library name="supply1">
 <packages>
 </packages>
 <symbols>
-<symbol name="GND" urn="urn:adsk.eagle:symbol:26925/1" library_version="1">
+<symbol name="GND">
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="GND" urn="urn:adsk.eagle:component:26954/1" prefix="GND" library_version="1">
+<deviceset name="GND" prefix="GND">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="GND" x="0" y="0"/>
@@ -4067,7 +4029,7 @@ https://github.com/AKstudios</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-RF" urn="urn:adsk.eagle:library:531">
+<library name="SparkFun-RF">
 <description>&lt;h3&gt;SparkFun RF, WiFi, Cellular, and Bluetooth&lt;/h3&gt;
 In this library you'll find things that send or receive RF-- cellular modules, Bluetooth, WiFi, etc.
 &lt;br&gt;
@@ -4082,7 +4044,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
-<package name="RFM69HCW-XXXS2" urn="urn:adsk.eagle:footprint:39514/1" library_version="1">
+<package name="RFM69HCW-XXXS2">
 <description>&lt;h3&gt;Hope RF RFM69HCW RF Transciever&lt;/h3&gt;
 &lt;p&gt;&lt;a href="http://www.orcam.eu/res/Datablad/rfm69hcwv11.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
 <smd name="4" x="-7.5" y="1" dx="3" dy="1.2" layer="1"/>
@@ -4138,7 +4100,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="8.127" y1="6.174" x2="8.127" y2="5.8438" width="0.2032" layer="21"/>
 <circle x="-9.089" y="8.392" radius="0.508" width="0" layer="21"/>
 </package>
-<package name="RFM69W-XXXS2" urn="urn:adsk.eagle:footprint:39515/1" library_version="1">
+<package name="RFM69W-XXXS2">
 <description>&lt;h3&gt;Hope RF RFM69HW RF Transceiver&lt;/h3&gt;
 &lt;p&gt;&lt;a href="http://www.hoperf.com/upload/rf/RFM69HW-V1.3.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
 <wire x1="-9.85" y1="8" x2="9.85" y2="8" width="0.127" layer="51"/>
@@ -4195,18 +4157,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <circle x="-10.435" y="8.381" radius="0.508" width="0" layer="21"/>
 </package>
 </packages>
-<packages3d>
-<package3d name="RFM69HCW-XXXS2" urn="urn:adsk.eagle:package:39566/1" type="box" library_version="1">
-<description>Hope RF RFM69HCW RF Transciever
-Datasheet</description>
-</package3d>
-<package3d name="RFM69W-XXXS2" urn="urn:adsk.eagle:package:39567/1" type="box" library_version="1">
-<description>Hope RF RFM69HW RF Transceiver
-Datasheet</description>
-</package3d>
-</packages3d>
 <symbols>
-<symbol name="RFM69H" urn="urn:adsk.eagle:symbol:39513/1" library_version="1">
+<symbol name="RFM69H">
 <description>&lt;h3&gt;Hope RF RFM69H ISM Transceiver Module&lt;/h3&gt; 
 &lt;p&gt;The RFM69H is a transceiver module capable of operation 
 over a wide frequency range, including the 
@@ -4246,7 +4198,7 @@ regulations. &lt;/p&gt;
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="RFM69H" urn="urn:adsk.eagle:component:39604/1" prefix="U" library_version="1">
+<deviceset name="RFM69H" prefix="U">
 <description>&lt;h3&gt;Hope RF RFM69H ISM Transceiver Module&lt;/h3&gt; 
 &lt;p&gt;The RFM69H is a transceiver module capable of operation over a wide frequency range, including the 315,433,868 and 915MHz license-free ISM (Industry Scientific and Medical) frequency bands. All major RF communication parameters are programmable and most of them  can  be  dynamically set.  The  RFM69H  offers  the unique advantage of programmable narrow-band and wide- band  communication modes. The RFM69H is optimized for low power consumption while offering high RF output power and channelized operation.Compliance  ETSI and FCC regulations. &lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.hoperf.cn/upload/docs/RF/SX/RFM69H_DataSheet_v1.3.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
@@ -4278,9 +4230,6 @@ regulations. &lt;/p&gt;
 <connect gate="G$1" pin="RESET" pad="6"/>
 <connect gate="G$1" pin="SCK" pad="4"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:39566/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-11997"/>
@@ -4306,9 +4255,6 @@ regulations. &lt;/p&gt;
 <connect gate="G$1" pin="RESET" pad="1"/>
 <connect gate="G$1" pin="SCK" pad="12"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:39567/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -4331,9 +4277,6 @@ regulations. &lt;/p&gt;
 <connect gate="G$1" pin="RESET" pad="6"/>
 <connect gate="G$1" pin="SCK" pad="4"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:39566/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-12053"/>
@@ -5750,9 +5693,9 @@ September 2016</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="adafruit" urn="urn:adsk.eagle:library:420">
+<library name="adafruit@1">
 <packages>
-<package name="1X01" library_version="1">
+<package name="1X01">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
 <wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
@@ -5767,17 +5710,17 @@ September 2016</description>
 <text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
 </package>
-<package name="1X01-CLEANBIG" library_version="1">
+<package name="1X01-CLEANBIG">
 <pad name="1" x="0" y="0" drill="1.016" diameter="1.778"/>
 <text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="1X1-BIGPOGO" library_version="1">
+<package name="1X1-BIGPOGO">
 <pad name="P$1" x="0" y="0" drill="1.4" diameter="2.54" shape="long"/>
 </package>
 </packages>
 <symbols>
-<symbol name="PINHD1" library_version="1">
+<symbol name="PINHD1">
 <wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
 <wire x1="1.27" y1="-2.54" x2="1.27" y2="2.54" width="0.4064" layer="94"/>
 <wire x1="1.27" y1="2.54" x2="-6.35" y2="2.54" width="0.4064" layer="94"/>
@@ -5788,7 +5731,7 @@ September 2016</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PINHD-1X1" prefix="JP" uservalue="yes" library_version="1">
+<deviceset name="PINHD-1X1" prefix="JP" uservalue="yes">
 <description>&lt;b&gt;Pin header 1x1 for 0.1" spacing&lt;/b&gt;
 &lt;p&gt;
 With round pins</description>
@@ -6032,7 +5975,7 @@ github.com/AKstudios</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-Switches" urn="urn:adsk.eagle:library:535">
+<library name="SparkFun-Switches">
 <description>&lt;h3&gt;SparkFun Switches, Buttons, Encoders&lt;/h3&gt;
 In this library you'll find switches, buttons, joysticks, and anything that moves to create or disrupt an electrical connection.
 &lt;br&gt;
@@ -6047,7 +5990,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
-<package name="TACTILE_SWITCH_SMD_6.0X3.5MM" urn="urn:adsk.eagle:footprint:40106/1" library_version="1">
+<package name="TACTILE_SWITCH_SMD_6.0X3.5MM">
 <description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - SMD, 6.0 x 3.5 mm&lt;/h3&gt;
 &lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.sparkfun.com/datasheets/Components/1101.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
@@ -6075,7 +6018,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="1.905" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
 <text x="0" y="-1.905" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
 </package>
-<package name="TACTILE_SWITCH_PTH_6.0MM" urn="urn:adsk.eagle:footprint:40103/1" library_version="1">
+<package name="TACTILE_SWITCH_PTH_6.0MM">
 <description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - PTH, 6.0mm Square&lt;/h3&gt;
 &lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.omron.com/ecb/products/pdf/en-b3f.pdf"&gt;Datasheet&lt;/a&gt; (B3F-1000)&lt;/p&gt;</description>
@@ -6106,7 +6049,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="3.302" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
 <text x="0" y="-3.175" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
 </package>
-<package name="TACTILE_SWITCH_SMD_4.5MM" urn="urn:adsk.eagle:footprint:40104/1" library_version="1">
+<package name="TACTILE_SWITCH_SMD_4.5MM">
 <description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - SMD, 4.5mm Square&lt;/h3&gt;
 &lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://spec_sheets.e-switch.com/specs/P010338.pdf"&gt;Dimensional Drawing&lt;/a&gt;&lt;/p&gt;</description>
@@ -6133,7 +6076,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="2.413" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
 <text x="0" y="-2.413" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
 </package>
-<package name="TACTILE_SWITCH_PTH_12MM" urn="urn:adsk.eagle:footprint:40105/1" library_version="1">
+<package name="TACTILE_SWITCH_PTH_12MM">
 <description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - PTH, 12mm Square&lt;/h3&gt;
 &lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.omron.com/ecb/products/pdf/en-b3f.pdf"&gt;Datasheet&lt;/a&gt; (B3F-5050)&lt;/p&gt;</description>
@@ -6164,7 +6107,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="6.223" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
 <text x="0" y="-6.223" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
 </package>
-<package name="TACTILE_SWITCH_SMD_6.2MM_TALL" urn="urn:adsk.eagle:footprint:40107/1" library_version="1">
+<package name="TACTILE_SWITCH_SMD_6.2MM_TALL">
 <description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - SMD, 6.2mm Square&lt;/h3&gt;
 &lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.apem.com/files/apem/brochures/ADTS6-ADTSM-KTSC6.pdf"&gt;Datasheet&lt;/a&gt; (ADTSM63NVTR)&lt;/p&gt;</description>
@@ -6180,7 +6123,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="3.175" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
 <text x="0" y="-3.175" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
 </package>
-<package name="TACTILE_SWITCH_PTH_RIGHT_ANGLE_KIT" urn="urn:adsk.eagle:footprint:40108/1" library_version="1">
+<package name="TACTILE_SWITCH_PTH_RIGHT_ANGLE_KIT">
 <description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - PTH, Right-angle&lt;/h3&gt;
 &lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Components/Switches/SW016.JPG"&gt;Dimensional Drawing&lt;/a&gt;&lt;/p&gt;</description>
@@ -6216,7 +6159,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="2.286" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
 <text x="0" y="-2.286" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
 </package>
-<package name="TACTILE_SWITCH_SMD_12MM" urn="urn:adsk.eagle:footprint:40109/1" library_version="1">
+<package name="TACTILE_SWITCH_SMD_12MM">
 <description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - SMD, 12mm Square&lt;/h3&gt;
 &lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Components/Switches/N301102.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
@@ -6247,7 +6190,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="6.223" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
 <text x="0" y="-6.223" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
 </package>
-<package name="TACTILE_SWITCH_PTH_6.0MM_KIT" urn="urn:adsk.eagle:footprint:40110/1" library_version="1">
+<package name="TACTILE_SWITCH_PTH_6.0MM_KIT">
 <description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - PTH, 6.0mm Square&lt;/h3&gt;
 &lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;
 &lt;p&gt;&lt;b&gt;Warning:&lt;/b&gt; This is the KIT version of this package. This package has a smaller diameter top stop mask, which doesn't cover the diameter of the pad. This means only the bottom side of the pads' copper will be exposed. You'll only be able to solder to the bottom side.&lt;/p&gt;
@@ -6359,7 +6302,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="3.175" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
 <text x="0" y="-3.175" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
 </package>
-<package name="TACTILE_SWITCH_SMD_5.2MM" urn="urn:adsk.eagle:footprint:40111/1" library_version="1">
+<package name="TACTILE_SWITCH_SMD_5.2MM">
 <description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - SMD, 5.2mm Square&lt;/h3&gt;
 &lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.sparkfun.com/datasheets/Components/Buttons/SMD-Button.pdf"&gt;Dimensional Drawing&lt;/a&gt;&lt;/p&gt;</description>
@@ -6382,7 +6325,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="2.667" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
 <text x="0" y="-2.667" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
 </package>
-<package name="TACTILE_SWITCH_SMD_RIGHT_ANGLE" urn="urn:adsk.eagle:footprint:40112/1" library_version="1">
+<package name="TACTILE_SWITCH_SMD_RIGHT_ANGLE">
 <description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - SMD, Right-angle&lt;/h3&gt;
 &lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;</description>
 <hole x="0" y="0.9" drill="0.7"/>
@@ -6403,7 +6346,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="1.651" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
 <text x="0" y="-2.286" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
 </package>
-<package name="TACTILE_SWITCH_SMD_4.6X2.8MM" urn="urn:adsk.eagle:footprint:40113/1" library_version="1">
+<package name="TACTILE_SWITCH_SMD_4.6X2.8MM">
 <description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - SMD, 4.6 x 2.8mm&lt;/h3&gt;
 &lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.ck-components.com/media/1479/kmr2.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
@@ -6428,65 +6371,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="-1.524" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
 </package>
 </packages>
-<packages3d>
-<package3d name="TACTILE_SWITCH_SMD_6.0X3.5MM" urn="urn:adsk.eagle:package:40165/1" type="box" library_version="1">
-<description>Momentary Switch (Pushbutton) - SPST - SMD, 6.0 x 3.5 mm
-Normally-open (NO) SPST momentary switches (buttons, pushbuttons).
-Datasheet</description>
-</package3d>
-<package3d name="TACTILE_SWITCH_PTH_6.0MM" urn="urn:adsk.eagle:package:40163/1" type="box" library_version="1">
-<description>Momentary Switch (Pushbutton) - SPST - PTH, 6.0mm Square
-Normally-open (NO) SPST momentary switches (buttons, pushbuttons).
-Datasheet (B3F-1000)</description>
-</package3d>
-<package3d name="TACTILE_SWITCH_SMD_4.5MM" urn="urn:adsk.eagle:package:40162/1" type="box" library_version="1">
-<description>Momentary Switch (Pushbutton) - SPST - SMD, 4.5mm Square
-Normally-open (NO) SPST momentary switches (buttons, pushbuttons).
-Dimensional Drawing</description>
-</package3d>
-<package3d name="TACTILE_SWITCH_PTH_12MM" urn="urn:adsk.eagle:package:40164/1" type="box" library_version="1">
-<description>Momentary Switch (Pushbutton) - SPST - PTH, 12mm Square
-Normally-open (NO) SPST momentary switches (buttons, pushbuttons).
-Datasheet (B3F-5050)</description>
-</package3d>
-<package3d name="TACTILE_SWITCH_SMD_6.2MM_TALL" urn="urn:adsk.eagle:package:40172/1" type="box" library_version="1">
-<description>Momentary Switch (Pushbutton) - SPST - SMD, 6.2mm Square
-Normally-open (NO) SPST momentary switches (buttons, pushbuttons).
-Datasheet (ADTSM63NVTR)</description>
-</package3d>
-<package3d name="TACTILE_SWITCH_PTH_RIGHT_ANGLE_KIT" urn="urn:adsk.eagle:package:40168/1" type="box" library_version="1">
-<description>Momentary Switch (Pushbutton) - SPST - PTH, Right-angle
-Normally-open (NO) SPST momentary switches (buttons, pushbuttons).
-Dimensional Drawing</description>
-</package3d>
-<package3d name="TACTILE_SWITCH_SMD_12MM" urn="urn:adsk.eagle:package:40166/1" type="box" library_version="1">
-<description>Momentary Switch (Pushbutton) - SPST - SMD, 12mm Square
-Normally-open (NO) SPST momentary switches (buttons, pushbuttons).
-Datasheet</description>
-</package3d>
-<package3d name="TACTILE_SWITCH_PTH_6.0MM_KIT" urn="urn:adsk.eagle:package:40170/1" type="box" library_version="1">
-<description>Momentary Switch (Pushbutton) - SPST - PTH, 6.0mm Square
-Normally-open (NO) SPST momentary switches (buttons, pushbuttons).
-Warning: This is the KIT version of this package. This package has a smaller diameter top stop mask, which doesn't cover the diameter of the pad. This means only the bottom side of the pads' copper will be exposed. You'll only be able to solder to the bottom side.
-Datasheet (B3F-1000)</description>
-</package3d>
-<package3d name="TACTILE_SWITCH_SMD_5.2MM" urn="urn:adsk.eagle:package:40167/1" type="box" library_version="1">
-<description>Momentary Switch (Pushbutton) - SPST - SMD, 5.2mm Square
-Normally-open (NO) SPST momentary switches (buttons, pushbuttons).
-Dimensional Drawing</description>
-</package3d>
-<package3d name="TACTILE_SWITCH_SMD_RIGHT_ANGLE" urn="urn:adsk.eagle:package:40169/1" type="box" library_version="1">
-<description>Momentary Switch (Pushbutton) - SPST - SMD, Right-angle
-Normally-open (NO) SPST momentary switches (buttons, pushbuttons).</description>
-</package3d>
-<package3d name="TACTILE_SWITCH_SMD_4.6X2.8MM" urn="urn:adsk.eagle:package:40176/1" type="box" library_version="1">
-<description>Momentary Switch (Pushbutton) - SPST - SMD, 4.6 x 2.8mm
-Normally-open (NO) SPST momentary switches (buttons, pushbuttons).
-Datasheet</description>
-</package3d>
-</packages3d>
 <symbols>
-<symbol name="SWITCH-MOMENTARY-2" urn="urn:adsk.eagle:symbol:40102/1" library_version="1">
+<symbol name="SWITCH-MOMENTARY-2">
 <description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST&lt;/h3&gt;
 &lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;</description>
 <wire x1="1.905" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
@@ -6500,7 +6386,7 @@ Datasheet</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MOMENTARY-SWITCH-SPST" urn="urn:adsk.eagle:component:40205/1" prefix="S" library_version="1">
+<deviceset name="MOMENTARY-SWITCH-SPST" prefix="S">
 <description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST&lt;/h3&gt;
 &lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;
 &lt;h4&gt;Variants&lt;/h4&gt;
@@ -6539,9 +6425,6 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="3"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:40163/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value=" SWCH-08441"/>
@@ -6554,9 +6437,6 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <connect gate="G$1" pin="1" pad="2 3"/>
 <connect gate="G$1" pin="2" pad="1 4"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:40162/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="SWCH-09213"/>
@@ -6568,9 +6448,6 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="3"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:40164/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="SWCH-09185"/>
@@ -6583,9 +6460,6 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:40165/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="SWCH-00815"/>
@@ -6598,9 +6472,6 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <connect gate="G$1" pin="1" pad="A2"/>
 <connect gate="G$1" pin="2" pad="B2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:40172/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="SWCH-11966"/>
@@ -6613,9 +6484,6 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:40168/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="CONN-10672"/>
@@ -6628,9 +6496,6 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="3"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:40166/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="SWCH-11967"/>
@@ -6643,9 +6508,6 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="3"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:40170/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="SWCH-08441"/>
@@ -6658,9 +6520,6 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="3"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:40167/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="SWCH-08247"/>
@@ -6673,9 +6532,6 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <connect gate="G$1" pin="1" pad="1 2"/>
 <connect gate="G$1" pin="2" pad="3 4"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:40167/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="SWCH-08247"/>
@@ -6688,9 +6544,6 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:40169/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="COMP-12265" constant="no"/>
@@ -6702,9 +6555,6 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <connect gate="G$1" pin="1" pad="1 2"/>
 <connect gate="G$1" pin="2" pad="3 4"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:40176/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="SWCH-13065"/>
@@ -6715,7 +6565,6 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 </deviceset>
 </devicesets>
 </library>
-<<<<<<< HEAD
 <library name="Adafruit PowerBoost 1000C Rev B">
 <description>Generated from &lt;b&gt;Adafruit PowerBoost 1000C Rev B.sch&lt;/b&gt;&lt;p&gt;
 by exp-lbrs.ulp</description>
@@ -7098,7 +6947,7 @@ by exp-lbrs.ulp</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-PowerSymbols" urn="urn:adsk.eagle:library:530">
+<library name="SparkFun-PowerSymbols">
 <description>&lt;h3&gt;SparkFun Power Symbols&lt;/h3&gt;
 This library contains power, ground, and voltage-supply symbols.
 &lt;br&gt;
@@ -7115,7 +6964,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <packages>
 </packages>
 <symbols>
-<symbol name="VCC" urn="urn:adsk.eagle:symbol:39418/1" library_version="1">
+<symbol name="VCC">
 <description>&lt;h3&gt;VCC Voltage Supply&lt;/h3&gt;</description>
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
@@ -7124,7 +6973,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="VCC" urn="urn:adsk.eagle:component:39449/1" prefix="SUPPLY" library_version="1">
+<deviceset name="VCC" prefix="SUPPLY">
 <description>&lt;h3&gt;VCC Voltage Supply&lt;/h3&gt;
 &lt;p&gt;Positive voltage supply (traditionally for a BJT device, C=collector).&lt;/p&gt;</description>
 <gates>
@@ -7321,7 +7170,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-DiscreteSemi" urn="urn:adsk.eagle:library:514">
+<library name="SparkFun-DiscreteSemi">
 <description>&lt;h3&gt;SparkFun Discrete Semiconductors&lt;/h3&gt;
 This library contains diodes, optoisolators, TRIACs, MOSFETs, transistors, etc. 
 &lt;br&gt;
@@ -7336,7 +7185,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
-<package name="SOD-523" urn="urn:adsk.eagle:footprint:38401/1" library_version="1">
+<package name="SOD-523">
 <description>SOD-523 (Small Outline Diode)</description>
 <smd name="C" x="0.7" y="0" dx="0.4" dy="0.4" layer="1"/>
 <smd name="A" x="-0.7" y="0" dx="0.4" dy="0.4" layer="1"/>
@@ -7361,7 +7210,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="0.3" y1="0.4" x2="0.3" y2="-0.4" width="0.127" layer="51"/>
 <wire x1="1.1176" y1="0.3048" x2="1.1176" y2="-0.3048" width="0.2032" layer="21"/>
 </package>
-<package name="SOD-323" urn="urn:adsk.eagle:footprint:38400/1" library_version="1">
+<package name="SOD-323">
 <description>SOD-323 (Small Outline Diode)</description>
 <wire x1="-1.77" y1="0.625" x2="-1.77" y2="-0.625" width="0.2032" layer="21"/>
 <wire x1="-0.9" y1="0.625" x2="0.9" y2="0.625" width="0.2032" layer="21"/>
@@ -7371,7 +7220,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
-<package name="SMA-DIODE" urn="urn:adsk.eagle:footprint:38402/1" library_version="1">
+<package name="SMA-DIODE">
 <description>&lt;B&gt;Diode&lt;/B&gt;
 &lt;p&gt;Basic SMA packaged diode. Good for reverse polarization protection. Common part #: MBRA140&lt;/p&gt;
 &lt;p&gt;SMA is the smallest package in the DO-214 standard (DO-214AC)&lt;/p&gt;</description>
@@ -7387,7 +7236,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="1.651" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1.651" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
-<package name="SOT23-3" urn="urn:adsk.eagle:footprint:38398/1" library_version="1">
+<package name="SOT23-3">
 <description>SOT23-3</description>
 <wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
 <wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
@@ -7404,24 +7253,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="1.651" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;VALUE</text>
 </package>
 </packages>
-<packages3d>
-<package3d name="SOD-523" urn="urn:adsk.eagle:package:38442/1" type="box" library_version="1">
-<description>SOD-523 (Small Outline Diode)</description>
-</package3d>
-<package3d name="SOD-323" urn="urn:adsk.eagle:package:38441/1" type="box" library_version="1">
-<description>SOD-323 (Small Outline Diode)</description>
-</package3d>
-<package3d name="SMA-DIODE" urn="urn:adsk.eagle:package:38443/1" type="box" library_version="1">
-<description>Diode
-Basic SMA packaged diode. Good for reverse polarization protection. Common part #: MBRA140
-SMA is the smallest package in the DO-214 standard (DO-214AC)</description>
-</package3d>
-<package3d name="SOT23-3" urn="urn:adsk.eagle:package:38446/1" type="box" library_version="1">
-<description>SOT23-3</description>
-</package3d>
-</packages3d>
 <symbols>
-<symbol name="DIODE-SCHOTTKY" urn="urn:adsk.eagle:symbol:38399/1" library_version="1">
+<symbol name="DIODE-SCHOTTKY">
 <description>&lt;h3&gt; Schottky Diode&lt;/h3&gt;
 Diode with low voltage drop</description>
 <wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.1524" layer="94"/>
@@ -7444,7 +7277,7 @@ Diode with low voltage drop</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="DIODE-SCHOTTKY" urn="urn:adsk.eagle:component:38469/1" prefix="D" library_version="1">
+<deviceset name="DIODE-SCHOTTKY" prefix="D">
 <description>&lt;h3&gt;Schottky diode&lt;/h3&gt;
 &lt;p&gt;A Schottky diode is a semiconductor diode which has a low forward voltage drop and a very fast switching action.&lt;/p&gt;</description>
 <gates>
@@ -7456,9 +7289,6 @@ Diode with low voltage drop</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:38441/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-11623"/>
@@ -7471,9 +7301,6 @@ Diode with low voltage drop</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:38442/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-11018"/>
@@ -7486,9 +7313,6 @@ Diode with low voltage drop</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:38443/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-08053"/>
@@ -7501,9 +7325,6 @@ Diode with low voltage drop</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:38441/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-10955"/>
@@ -7516,9 +7337,6 @@ Diode with low voltage drop</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:38443/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-09886"/>
@@ -7531,9 +7349,6 @@ Diode with low voltage drop</description>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="C" pad="3"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:38446/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-08411"/>
@@ -7545,8 +7360,6 @@ Diode with low voltage drop</description>
 </deviceset>
 </devicesets>
 </library>
-=======
->>>>>>> origin/master
 </libraries>
 <attributes>
 </attributes>
@@ -7560,29 +7373,12 @@ Diode with low voltage drop</description>
 </class>
 </classes>
 <parts>
-<<<<<<< HEAD
-<part name="GND1" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="GND" device=""/>
-<part name="SUPPLY1" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="VCC" device=""/>
-<part name="SUPPLY7" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="VCC" device=""/>
-<part name="U8" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="MCP1703" device="CB" package3d_urn="urn:adsk.eagle:package:16489/2">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value="MCP1703T-2502E/CB"/>
-<attribute name="OC_NEWARK" value="18T9177"/>
-</part>
-<part name="C1" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="CAP" device="0805" value="1uF">
-<attribute name="MPN" value="CC0805ZRY5V8BB105"/>
-</part>
-<part name="GND2" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="GND" device=""/>
-<part name="SUPPLY8" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="VCC" device=""/>
-<part name="SUPPLY11" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="VCC" device=""/>
-<part name="J3" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="USB" device="-MICROB">
-=======
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="SUPPLY7" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="U8" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="MCP1703" device="CB" package3d_urn="urn:adsk.eagle:package:16489/1">
+<part name="U8" library="linear" deviceset="MCP1703" device="CB">
 <attribute name="MF" value=""/>
-<attribute name="MPN" value="MCP1703T-3302E/CB"/>
+<attribute name="MPN" value="MCP1703T-2502E/CB"/>
 <attribute name="OC_NEWARK" value="18T9177"/>
 </part>
 <part name="C1" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF">
@@ -7591,23 +7387,7 @@ Diode with low voltage drop</description>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY8" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="SUPPLY11" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="U6" library="SparkFun-Sensors" deviceset="ADMP401" device="">
-<attribute name="MPN" value="INMP401ACEZ-R7"/>
-</part>
-<part name="U3" library="SparkFun-AnalogIC" deviceset="OPA344" device="">
-<attribute name="MPN" value="OPA344NA/3K"/>
-</part>
-<part name="R3" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1.5K">
-<attribute name="MPN" value="RC0805FR-071K5L "/>
-</part>
-<part name="R8" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100K">
-<attribute name="MPN" value="RC0805FR-07100KL "/>
-</part>
-<part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="SUPPLY9" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="J3" library="SparkFun-Connectors" deviceset="USB" device="-MICROB">
->>>>>>> origin/master
 <attribute name="MPN" value="47346-0001"/>
 </part>
 <part name="RX" library="adafruit" deviceset="LED" device="CHIPLED_0805">
@@ -7620,20 +7400,6 @@ Diode with low voltage drop</description>
 <attribute name="MPN" value="LG R971-KN-1"/>
 <attribute name="OC_NEWARK" value="unknown"/>
 </part>
-<<<<<<< HEAD
-<part name="GND7" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="GND" device=""/>
-<part name="GND9" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="GND" device=""/>
-<part name="GND10" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="GND" device=""/>
-<part name="U9" library="bosch-bmp280" deviceset="BMP280" device="">
-<attribute name="MPN" value="BMP280"/>
-</part>
-<part name="GND6" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="GND" device=""/>
-<part name="SUPPLY10" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="VCC" device=""/>
-<part name="SUPPLY12" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="VCC" device=""/>
-<part name="H1" library="SparkFun-Electromechanical" library_urn="urn:adsk.eagle:library:516" deviceset="STAND-OFF" device=""/>
-<part name="H2" library="SparkFun-Electromechanical" library_urn="urn:adsk.eagle:library:516" deviceset="STAND-OFF" device=""/>
-<part name="FRAME1" library="SparkFun-Retired" library_urn="urn:adsk.eagle:library:533" deviceset="FRAME-A3" device=""/>
-=======
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -7646,30 +7412,28 @@ Diode with low voltage drop</description>
 <part name="H1" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
 <part name="H2" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
 <part name="FRAME1" library="SparkFun-Retired" deviceset="FRAME-A3" device=""/>
->>>>>>> origin/master
 <part name="U$1" library="adafruit" deviceset="FIDUCIAL" device=""/>
 <part name="U$2" library="adafruit" deviceset="FIDUCIAL" device=""/>
 <part name="U$3" library="adafruit" deviceset="FIDUCIAL" device=""/>
 <part name="U10" library="TSL2591" deviceset="LIGHT_TSL2591" device="" value="TSL2591">
 <attribute name="MPN" value="TSL25911FN "/>
 </part>
-<<<<<<< HEAD
-<part name="GND4" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="GND" device=""/>
-<part name="SUPPLY14" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="VCC" device=""/>
-<part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="SUPPLY15" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="VCC" device=""/>
-<part name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="M02" device="PTH"/>
-<part name="C4" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="CAP" device="0805" value="10uF">
+<part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="SUPPLY14" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
+<part name="GND12" library="supply1" deviceset="GND" device=""/>
+<part name="SUPPLY15" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
+<part name="J1" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
+<part name="C4" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="10uF">
 <attribute name="MPN" value="CC0805KKX5R6BB106"/>
 </part>
 <part name="X1" library="SparkFun" deviceset="RESONATOR" device="SMD" value="16 MHz"/>
 <part name="U7" library="Amphenol" deviceset="PMS7003" device=""/>
-<part name="U11" library="SparkFun-RF" library_urn="urn:adsk.eagle:library:531" deviceset="RFM69H" device="CW-915" package3d_urn="urn:adsk.eagle:package:39566/1" value="915MHz"/>
-<part name="GND5" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="GND" device=""/>
-<part name="SUPPLY3" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="VCC" device=""/>
-<part name="H3" library="SparkFun-Electromechanical" library_urn="urn:adsk.eagle:library:516" deviceset="STAND-OFF" device=""/>
+<part name="U11" library="SparkFun-RF" deviceset="RFM69H" device="CW-915" value="915MHz"/>
+<part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
+<part name="H3" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
 <part name="TC1" library="TagConnect" deviceset="TC2030-IDC" device="-NL"/>
-<part name="U4" library="SparkFun-Sensors" library_urn="urn:adsk.eagle:library:534" deviceset="SI7021" device="" package3d_urn="urn:adsk.eagle:package:39974/1"/>
+<part name="U4" library="SparkFun-Sensors" deviceset="SI7021" device=""/>
 <part name="D1" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_DIODE-SCHOTTKY" device="SOD-123" value="SOD123"/>
 <part name="U2" library="ftdi_ft231xq-r" deviceset="FT231XQ-R" device=""/>
 <part name="C12" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF"/>
@@ -7687,277 +7451,83 @@ Diode with low voltage drop</description>
 <part name="R18" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="470"/>
 <part name="R19" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="1K"/>
 <part name="R20" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="1K"/>
-<part name="J2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="M02" device="PTH"/>
-<part name="U12" library="MH-z19" deviceset="MH-Z19" device="">
-<attribute name="MPN" value="MH-z19"/>
-</part>
-<part name="U5" library="ATMEGA328P-MU" deviceset="ATMEGA328P-MU" device=""/>
-<part name="GND3" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="GND" device=""/>
-<part name="SUPPLY13" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="VCC" device=""/>
-<part name="C16" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF"/>
-<part name="U13" library="CCS811" deviceset="CCS811" device="-I2C"/>
-<part name="GND14" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="GND" device=""/>
-<part name="C17" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF"/>
-<part name="JP1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="PINHD-1X1" device="CB" value="Antenna"/>
-<part name="U1" library="NeoPixel Nano 2427" deviceset="NEOPIXEL_NANO_2427" device=""/>
-<part name="C18" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="1uF"/>
-<part name="R4" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="470"/>
-<part name="U14" library="IAQ-Core" deviceset="IAQ-CORE-C" device=""/>
-<part name="SUPPLY16" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="VCC" device=""/>
-<part name="GND11" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="GND" device=""/>
-<part name="C3" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF"/>
-<part name="C19" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF"/>
-<part name="C20" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF"/>
-<part name="C2" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="1uF"/>
-<part name="GND8" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="GND" device=""/>
-<part name="SUPPLY2" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="VCC" device=""/>
-<part name="SUPPLY5" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="VCC" device=""/>
-<part name="R9" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="100K"/>
-<part name="U15" library="VLP-450-F" deviceset="VLP-450-F" device=""/>
-<part name="U16" library="VLP-450-F" deviceset="VLP-450-F" device=""/>
-<part name="C5" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF"/>
-<part name="SUPPLY17" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="VCC" device=""/>
-<part name="GND13" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="GND" device=""/>
-<part name="R10" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K"/>
-<part name="SUPPLY18" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="VCC" device=""/>
-<part name="U$4" library="0878980426" deviceset="0878980426" device=""/>
-<part name="U$5" library="0878980426" deviceset="0878980426" device=""/>
-<part name="R12" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="100K"/>
-<part name="R14" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="100K"/>
-<part name="SUPPLY19" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="VCC" device=""/>
-<part name="SUPPLY20" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="VCC" device=""/>
-<part name="U$6" library="CONN_HDR_1.27MM_SMD_4POS" deviceset="CONN_HDR_1.27MM_SMD_4POS" device=""/>
-<part name="S1" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" deviceset="MOMENTARY-SWITCH-SPST" device="-SMD-6.0X3.5MM" package3d_urn="urn:adsk.eagle:package:40165/1"/>
-<part name="C8" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF"/>
-<part name="R16" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K"/>
-<part name="R21" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K"/>
-<part name="SUPPLY21" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="VCC" device=""/>
-<part name="GND15" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="GND" device=""/>
-=======
-<part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="SUPPLY14" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="SUPPLY15" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="J1" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
-<part name="C4" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="10uF">
-<attribute name="MPN" value="CC0805KKX5R6BB106"/>
-</part>
-<part name="X1" library="SparkFun" deviceset="RESONATOR" device="SMD" value="16 MHz">
-<attribute name="MPN" value="CSTCE16M0V53-R0"/>
-</part>
-<part name="U7" library="Amphenol" deviceset="PMS7003" device="">
-<attribute name="MPN" value="20021311-00010T4LF"/>
-</part>
-<part name="U11" library="SparkFun-RF" deviceset="RFM69H" device="CW-915" value="915MHz">
-<attribute name="MPN" value="RFM69HCW"/>
-</part>
-<part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="H3" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
-<part name="TC1" library="TagConnect" deviceset="TC2030-IDC" device="-NL"/>
-<part name="U4" library="SparkFun-Sensors" deviceset="SI7021" device="">
-<attribute name="MPN" value="Si7021-A20-GM1"/>
-</part>
-<part name="D1" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_DIODE-SCHOTTKY" device="SOD-123" value="SOD123">
-<attribute name="MPN" value="SD103AW-13-F"/>
-</part>
-<part name="U2" library="ftdi_ft231xq-r" deviceset="FT231XQ-R" device="">
-<attribute name="MPN" value="FT231XQ-R"/>
-</part>
-<part name="C12" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF">
-<attribute name="MPN" value="GRM155R71C104KA88J"/>
-</part>
-<part name="C15" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF">
-<attribute name="MPN" value="GRM155R71C104KA88J"/>
-</part>
-<part name="R5" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K">
-<attribute name="MPN" value="RC0402FR-0710KL"/>
-</part>
-<part name="R6" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K">
-<attribute name="MPN" value="RC0402FR-0710KL"/>
-</part>
-<part name="R13" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K">
-<attribute name="MPN" value="RC0402FR-0710KL"/>
-</part>
-<part name="C6" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF">
-<attribute name="MPN" value="GRM155R71C104KA88J"/>
-</part>
-<part name="C7" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF">
-<attribute name="MPN" value="GRM155R71C104KA88J"/>
-</part>
-<part name="C11" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF">
-<attribute name="MPN" value="GRM155R71C104KA88J"/>
-</part>
-<part name="C13" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF">
-<attribute name="MPN" value="GRM155R71C104KA88J"/>
-</part>
-<part name="R1" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K">
-<attribute name="MPN" value="RC0402FR-0710KL"/>
-</part>
-<part name="R2" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K">
-<attribute name="MPN" value="RC0402FR-0710KL"/>
-</part>
-<part name="R7" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K">
-<attribute name="MPN" value="RC0402FR-0710KL"/>
-</part>
-<part name="R11" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="27">
-<attribute name="MPN" value="RC0402JR-0727RL"/>
-</part>
-<part name="R15" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="27">
-<attribute name="MPN" value="RC0402JR-0727RL"/>
-</part>
-<part name="R17" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="470">
-<attribute name="MPN" value="RC0402FR-07470RL"/>
-</part>
-<part name="R18" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="470">
-<attribute name="MPN" value="RC0402FR-07470RL"/>
-</part>
-<part name="R19" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="1K">
-<attribute name="MPN" value="RC0402JR-071KL"/>
-</part>
-<part name="R20" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="1K">
-<attribute name="MPN" value="RC0402JR-071KL"/>
-</part>
 <part name="J2" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 <part name="U12" library="MH-z19" deviceset="MH-Z19" device="">
 <attribute name="MPN" value="MH-z19"/>
 </part>
-<part name="U5" library="ATMEGA328P-MU" deviceset="ATMEGA328P-MU" device="">
-<attribute name="MPN" value="ATMEGA328P-MU"/>
-</part>
+<part name="U5" library="ATMEGA328P-MU" deviceset="ATMEGA328P-MU" device=""/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY13" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="C16" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF">
-<attribute name="MPN" value="GRM155R71C104KA88J"/>
-</part>
-<part name="U13" library="CCS811" deviceset="CCS811" device="-I2C">
-<attribute name="MPN" value="CCS811"/>
-</part>
+<part name="C16" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF"/>
+<part name="U13" library="CCS811" deviceset="CCS811" device="-I2C"/>
 <part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C17" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF">
-<attribute name="MPN" value="GRM155R71C104KA88J"/>
-</part>
-<part name="JP1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="PINHD-1X1" device="CB" value="Antenna"/>
-<part name="U1" library="NeoPixel Nano 2427" deviceset="NEOPIXEL_NANO_2427" device="">
-<attribute name="MPN" value="SK6805-2427"/>
-<attribute name="PROD_ID" value="3484"/>
-</part>
-<part name="C18" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="1uF">
-<attribute name="MPN" value="GRM155R60J105KE19D"/>
-</part>
-<part name="R4" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="470">
-<attribute name="MPN" value="RC0402FR-07470RL"/>
-</part>
-<part name="U14" library="IAQ-Core" deviceset="IAQ-CORE-C" device="">
-<attribute name="MPN" value="IAQ-CORE C"/>
-</part>
+<part name="C17" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF"/>
+<part name="JP1" library="adafruit@1" deviceset="PINHD-1X1" device="CB" value="Antenna"/>
+<part name="U1" library="NeoPixel Nano 2427" deviceset="NEOPIXEL_NANO_2427" device=""/>
+<part name="C18" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="1uF"/>
+<part name="R4" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="470"/>
+<part name="U14" library="IAQ-Core" deviceset="IAQ-CORE-C" device=""/>
 <part name="SUPPLY16" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND11" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C3" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF">
-<attribute name="MPN" value="GRM155R71C104KA88J"/>
-</part>
-<part name="C19" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF">
-<attribute name="MPN" value="GRM155R71C104KA88J"/>
-</part>
-<part name="C20" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF">
-<attribute name="MPN" value="GRM155R71C104KA88J"/>
-</part>
-<part name="C10" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="4.7uF">
-<attribute name="MPN" value="GRM155R60J475ME47D"/>
-</part>
-<part name="C14" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="1uF">
-<attribute name="MPN" value="GRM155R60J105KE19D"/>
-</part>
-<part name="C21" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="100pF">
-<attribute name="MPN" value="GRM1555C1H101JA01D"/>
-</part>
-<part name="C2" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="1uF">
-<attribute name="MPN" value="GRM155R60J105KE19D"/>
-</part>
+<part name="C3" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF"/>
+<part name="C19" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF"/>
+<part name="C20" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF"/>
+<part name="C2" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="1uF"/>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="R9" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="100K">
-<attribute name="MPN" value="RC0402FR-07100KL"/>
-</part>
-<part name="U15" library="VLP-450-F" deviceset="VLP-450-F" device="">
-<attribute name="MPN" value="VLP-550-F"/>
-</part>
-<part name="U16" library="VLP-450-F" deviceset="VLP-450-F" device="">
-<attribute name="MPN" value="VLP-650-F"/>
-</part>
-<part name="C5" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF">
-<attribute name="MPN" value="GRM155R71C104KA88J"/>
-</part>
+<part name="R9" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="100K"/>
+<part name="U15" library="VLP-450-F" deviceset="VLP-450-F" device=""/>
+<part name="U16" library="VLP-450-F" deviceset="VLP-450-F" device=""/>
+<part name="C5" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF"/>
 <part name="SUPPLY17" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND13" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R10" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K">
-<attribute name="MPN" value="RC0402FR-0710KL"/>
-</part>
+<part name="R10" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K"/>
 <part name="SUPPLY18" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="U$4" library="0878980426" deviceset="0878980426" device="">
-<attribute name="MPN" value="0878980426"/>
-</part>
-<part name="U$5" library="0878980426" deviceset="0878980426" device="">
-<attribute name="MPN" value="0878980426"/>
-</part>
-<part name="R12" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="100K">
-<attribute name="MPN" value="RC0402FR-07100KL"/>
-</part>
-<part name="R14" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="100K">
-<attribute name="MPN" value="RC0402FR-07100KL"/>
-</part>
+<part name="U$4" library="0878980426" deviceset="0878980426" device=""/>
+<part name="U$5" library="0878980426" deviceset="0878980426" device=""/>
+<part name="R12" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="100K"/>
+<part name="R14" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="100K"/>
 <part name="SUPPLY19" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="SUPPLY20" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="U$6" library="CONN_HDR_1.27MM_SMD_4POS" deviceset="CONN_HDR_1.27MM_SMD_4POS" device="">
-<attribute name="MPN" value="M50-3630442"/>
-</part>
-<part name="S1" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-SMD-6.0X3.5MM">
-<attribute name="MPN" value="RS-032G05A3-SM RT"/>
-</part>
-<part name="C8" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF">
-<attribute name="MPN" value="GRM155R71C104KA88J"/>
-</part>
-<part name="R16" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K">
-<attribute name="MPN" value="RC0402FR-0710KL"/>
-</part>
-<part name="R21" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K">
-<attribute name="MPN" value="RC0402FR-0710KL"/>
-</part>
+<part name="U$6" library="CONN_HDR_1.27MM_SMD_4POS" deviceset="CONN_HDR_1.27MM_SMD_4POS" device=""/>
+<part name="S1" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-SMD-6.0X3.5MM"/>
+<part name="C8" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="0.1uF"/>
+<part name="R16" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K"/>
+<part name="R21" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K"/>
 <part name="SUPPLY21" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
->>>>>>> origin/master
 <part name="U$7" library="adafruit" deviceset="FIDUCIAL" device=""/>
 <part name="C9" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="10uF"/>
 <part name="R22" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="1K"/>
 <part name="R23" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="2.2K"/>
 <part name="R24" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="470K"/>
-<part name="SUPPLY22" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VCC" device=""/>
+<part name="SUPPLY22" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="C22" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="10uF"/>
 <part name="R25" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="100"/>
 <part name="R26" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K"/>
 <part name="R27" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="1K"/>
-<part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND16" library="supply1" deviceset="GND" device=""/>
+<part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="C23" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="1uF"/>
-<part name="SUPPLY23" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VCC" device=""/>
-<part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="SUPPLY23" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
+<part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="U17" library="LMV324" deviceset="LMV324QT" device=""/>
-<part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND20" library="supply1" deviceset="GND" device=""/>
 <part name="MK1" library="CMC-4015-40P" deviceset="MIC2" device="-PTH"/>
 <part name="R28" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K"/>
 <part name="R29" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K"/>
-<part name="SUPPLY25" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VCC" device=""/>
-<part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="SUPPLY25" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
+<part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="C24" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="1uF"/>
 <part name="R30" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="10K"/>
-<part name="SUPPLY26" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VCC" device=""/>
-<part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="SUPPLY26" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
+<part name="GND22" library="supply1" deviceset="GND" device=""/>
 <part name="R31" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="22K"/>
 <part name="R32" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="100"/>
-<part name="GND23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="D3" library="SparkFun-DiscreteSemi" library_urn="urn:adsk.eagle:library:514" deviceset="DIODE-SCHOTTKY" device="-RB751S40" package3d_urn="urn:adsk.eagle:package:38442/1" value="120mA/40V/370mV"/>
-<part name="D4" library="SparkFun-DiscreteSemi" library_urn="urn:adsk.eagle:library:514" deviceset="DIODE-SCHOTTKY" device="-RB751S40" package3d_urn="urn:adsk.eagle:package:38442/1" value="120mA/40V/370mV"/>
+<part name="GND23" library="supply1" deviceset="GND" device=""/>
+<part name="D3" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-RB751S40" value="120mA/40V/370mV"/>
+<part name="D4" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-RB751S40" value="120mA/40V/370mV"/>
 </parts>
 <sheets>
 <sheet>
@@ -8080,26 +7650,13 @@ Relative Humidity</text>
 <instance part="C4" gate="G$1" x="274.32" y="-45.72">
 <attribute name="MPN" x="274.32" y="-45.72" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
-<<<<<<< HEAD
 <instance part="X1" gate="G$1" x="-38.1" y="-78.74"/>
 <instance part="U7" gate="G$1" x="83.82" y="111.76"/>
 <instance part="U11" gate="G$1" x="284.48" y="63.5"/>
-=======
-<instance part="X1" gate="G$1" x="-38.1" y="-78.74">
-<attribute name="MPN" x="-38.1" y="-78.74" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="U7" gate="G$1" x="86.36" y="109.22">
-<attribute name="MPN" x="86.36" y="109.22" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="U11" gate="G$1" x="284.48" y="63.5">
-<attribute name="MPN" x="284.48" y="63.5" size="1.778" layer="96" display="off"/>
-</instance>
->>>>>>> origin/master
 <instance part="GND5" gate="1" x="302.26" y="50.8"/>
 <instance part="SUPPLY3" gate="G$1" x="264.16" y="78.74"/>
 <instance part="H3" gate="G$1" x="226.06" y="-96.52"/>
 <instance part="TC1" gate="A" x="-35.56" y="109.22" rot="R180"/>
-<<<<<<< HEAD
 <instance part="U4" gate="G$1" x="27.94" y="109.22"/>
 <instance part="D1" gate="G$1" x="127" y="-43.18"/>
 <instance part="U2" gate="G$1" x="160.02" y="-68.58"/>
@@ -8118,193 +7675,50 @@ Relative Humidity</text>
 <instance part="R18" gate="G$1" x="205.74" y="-78.74"/>
 <instance part="R19" gate="G$1" x="193.04" y="-53.34" rot="R180"/>
 <instance part="R20" gate="G$1" x="185.42" y="-55.88" rot="R180"/>
-=======
-<instance part="U4" gate="G$1" x="27.94" y="109.22">
-<attribute name="MPN" x="27.94" y="109.22" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="D1" gate="G$1" x="127" y="-43.18">
-<attribute name="MPN" x="127" y="-43.18" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="U2" gate="G$1" x="160.02" y="-68.58">
-<attribute name="MPN" x="160.02" y="-68.58" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="C12" gate="G$1" x="-60.96" y="-33.02" rot="R180">
-<attribute name="MPN" x="-60.96" y="-33.02" size="1.778" layer="96" rot="R180" display="off"/>
-</instance>
-<instance part="C15" gate="G$1" x="-53.34" y="-76.2" rot="R180">
-<attribute name="MPN" x="-53.34" y="-76.2" size="1.778" layer="96" rot="R180" display="off"/>
-</instance>
-<instance part="R5" gate="G$1" x="-45.72" y="-35.56" rot="R90">
-<attribute name="MPN" x="-45.72" y="-35.56" size="1.778" layer="96" rot="R90" display="off"/>
-</instance>
-<instance part="R6" gate="G$1" x="30.48" y="-45.72" rot="R90">
-<attribute name="MPN" x="30.48" y="-45.72" size="1.778" layer="96" rot="R90" display="off"/>
-</instance>
-<instance part="R13" gate="G$1" x="40.64" y="-45.72" rot="R90">
-<attribute name="MPN" x="40.64" y="-45.72" size="1.778" layer="96" rot="R90" display="off"/>
-</instance>
-<instance part="C6" gate="G$1" x="119.38" y="-55.88" rot="R180">
-<attribute name="MPN" x="119.38" y="-55.88" size="1.778" layer="96" rot="R180" display="off"/>
-</instance>
-<instance part="C7" gate="G$1" x="134.62" y="111.76" rot="R180">
-<attribute name="MPN" x="134.62" y="111.76" size="1.778" layer="96" rot="R180" display="off"/>
-</instance>
-<instance part="C11" gate="G$1" x="284.48" y="-43.18" rot="R180">
-<attribute name="MPN" x="284.48" y="-43.18" size="1.778" layer="96" rot="R180" display="off"/>
-</instance>
-<instance part="C13" gate="G$1" x="-58.42" y="35.56" rot="R180">
-<attribute name="MPN" x="-58.42" y="35.56" size="1.778" layer="96" rot="R180" display="off"/>
-</instance>
-<instance part="R1" gate="G$1" x="2.54" y="43.18" rot="R90">
-<attribute name="MPN" x="2.54" y="43.18" size="1.778" layer="96" rot="R90" display="off"/>
-</instance>
-<instance part="R2" gate="G$1" x="2.54" y="15.24" rot="R90">
-<attribute name="MPN" x="2.54" y="15.24" size="1.778" layer="96" rot="R90" display="off"/>
-</instance>
-<instance part="R7" gate="G$1" x="264.16" y="68.58" rot="R90">
-<attribute name="MPN" x="264.16" y="68.58" size="1.778" layer="96" rot="R90" display="off"/>
-</instance>
-<instance part="R11" gate="G$1" x="119.38" y="-76.2" rot="R180">
-<attribute name="MPN" x="119.38" y="-76.2" size="1.778" layer="96" rot="R180" display="off"/>
-</instance>
-<instance part="R15" gate="G$1" x="119.38" y="-73.66">
-<attribute name="MPN" x="119.38" y="-73.66" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="R17" gate="G$1" x="198.12" y="-81.28" rot="R180">
-<attribute name="MPN" x="198.12" y="-81.28" size="1.778" layer="96" rot="R180" display="off"/>
-</instance>
-<instance part="R18" gate="G$1" x="205.74" y="-78.74">
-<attribute name="MPN" x="205.74" y="-78.74" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="R19" gate="G$1" x="193.04" y="-53.34" rot="R180">
-<attribute name="MPN" x="193.04" y="-53.34" size="1.778" layer="96" rot="R180" display="off"/>
-</instance>
-<instance part="R20" gate="G$1" x="185.42" y="-55.88" rot="R180">
-<attribute name="MPN" x="185.42" y="-55.88" size="1.778" layer="96" rot="R180" display="off"/>
-</instance>
->>>>>>> origin/master
 <instance part="J2" gate="G$1" x="264.16" y="-2.54"/>
 <instance part="U12" gate="G$1" x="271.78" y="127">
 <attribute name="MPN" x="271.78" y="127" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="U5" gate="G$1" x="-7.62" y="-71.12">
-<attribute name="MPN" x="-7.62" y="-71.12" size="1.778" layer="96" display="off"/>
-</instance>
+<instance part="U5" gate="G$1" x="-7.62" y="-71.12"/>
 <instance part="GND3" gate="1" x="15.24" y="104.14"/>
 <instance part="SUPPLY13" gate="G$1" x="15.24" y="114.3"/>
-<instance part="C16" gate="G$1" x="10.16" y="111.76" rot="R180">
-<attribute name="MPN" x="7.62" y="119.38" size="1.778" layer="96" rot="R180" display="off"/>
-</instance>
-<instance part="U13" gate="G$1" x="134.62" y="0">
-<attribute name="MPN" x="134.62" y="0" size="1.778" layer="96" display="off"/>
-</instance>
+<instance part="C16" gate="G$1" x="10.16" y="111.76" rot="R180"/>
+<instance part="U13" gate="G$1" x="134.62" y="0"/>
 <instance part="GND14" gate="1" x="292.1" y="111.76"/>
-<instance part="C17" gate="G$1" x="287.02" y="116.84" rot="R270">
-<attribute name="MPN" x="287.02" y="116.84" size="1.778" layer="96" rot="R270" display="off"/>
-</instance>
+<instance part="C17" gate="G$1" x="287.02" y="116.84" rot="R270"/>
 <instance part="JP1" gate="G$1" x="304.8" y="66.04" rot="R90"/>
-<instance part="U1" gate="G$1" x="215.9" y="63.5">
-<attribute name="MPN" x="215.9" y="63.5" size="1.778" layer="96" display="off"/>
-<attribute name="PROD_ID" x="215.9" y="63.5" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="C18" gate="G$1" x="195.58" y="63.5" rot="R180">
-<attribute name="MPN" x="195.58" y="63.5" size="1.778" layer="96" rot="R180" display="off"/>
-</instance>
-<instance part="R4" gate="G$1" x="233.68" y="68.58" rot="R270">
-<attribute name="MPN" x="233.68" y="68.58" size="1.778" layer="96" rot="R270" display="off"/>
-</instance>
-<instance part="U14" gate="G$1" x="149.86" y="60.96">
-<attribute name="MPN" x="149.86" y="60.96" size="1.778" layer="96" display="off"/>
-</instance>
+<instance part="U1" gate="G$1" x="215.9" y="63.5"/>
+<instance part="C18" gate="G$1" x="195.58" y="63.5" rot="R180"/>
+<instance part="R4" gate="G$1" x="233.68" y="68.58" rot="R270"/>
+<instance part="U14" gate="G$1" x="149.86" y="60.96"/>
 <instance part="SUPPLY16" gate="G$1" x="134.62" y="66.04"/>
 <instance part="GND11" gate="1" x="134.62" y="55.88"/>
-<<<<<<< HEAD
 <instance part="C3" gate="G$1" x="129.54" y="63.5" rot="R180"/>
 <instance part="C19" gate="G$1" x="241.3" y="114.3" rot="R180"/>
 <instance part="C20" gate="G$1" x="195.58" y="116.84" rot="R180"/>
 <instance part="C2" gate="G$1" x="167.64" y="0" rot="R180"/>
-=======
-<instance part="C3" gate="G$1" x="129.54" y="63.5" rot="R180">
-<attribute name="MPN" x="129.54" y="63.5" size="1.778" layer="96" rot="R180" display="off"/>
-</instance>
-<instance part="C19" gate="G$1" x="241.3" y="114.3" rot="R180">
-<attribute name="MPN" x="241.3" y="114.3" size="1.778" layer="96" rot="R180" display="off"/>
-</instance>
-<instance part="C20" gate="G$1" x="195.58" y="116.84" rot="R180">
-<attribute name="MPN" x="195.58" y="116.84" size="1.778" layer="96" rot="R180" display="off"/>
-</instance>
-<instance part="C10" gate="G$1" x="-22.86" y="33.02" rot="R270">
-<attribute name="MPN" x="-22.86" y="33.02" size="1.778" layer="96" rot="R270" display="off"/>
-</instance>
-<instance part="C14" gate="G$1" x="-7.62" y="12.7">
-<attribute name="MPN" x="-7.62" y="12.7" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="C21" gate="G$1" x="17.78" y="60.96" rot="R90">
-<attribute name="MPN" x="17.78" y="60.96" size="1.778" layer="96" rot="R90" display="off"/>
-</instance>
-<instance part="C2" gate="G$1" x="167.64" y="0" rot="R180">
-<attribute name="MPN" x="167.64" y="0" size="1.778" layer="96" rot="R180" display="off"/>
-</instance>
->>>>>>> origin/master
 <instance part="GND8" gate="1" x="147.32" y="-7.62"/>
 <instance part="SUPPLY2" gate="G$1" x="175.26" y="7.62"/>
 <instance part="SUPPLY5" gate="G$1" x="127" y="25.4"/>
-<instance part="R9" gate="G$1" x="127" y="20.32" rot="R270">
-<attribute name="MPN" x="127" y="20.32" size="1.778" layer="96" rot="R270" display="off"/>
-</instance>
-<instance part="U15" gate="G$1" x="226.06" y="-73.66">
-<attribute name="MPN" x="226.06" y="-73.66" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="U16" gate="G$1" x="226.06" y="-83.82">
-<attribute name="MPN" x="226.06" y="-83.82" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="C5" gate="G$1" x="38.1" y="-71.12" rot="R180">
-<attribute name="MPN" x="38.1" y="-71.12" size="1.778" layer="96" rot="R180" display="off"/>
-</instance>
+<instance part="R9" gate="G$1" x="127" y="20.32" rot="R270"/>
+<instance part="U15" gate="G$1" x="226.06" y="-73.66"/>
+<instance part="U16" gate="G$1" x="226.06" y="-83.82"/>
+<instance part="C5" gate="G$1" x="38.1" y="-71.12" rot="R180"/>
 <instance part="SUPPLY17" gate="G$1" x="38.1" y="-66.04"/>
 <instance part="GND13" gate="1" x="38.1" y="-81.28"/>
-<<<<<<< HEAD
 <instance part="R10" gate="G$1" x="99.06" y="101.6" rot="R90"/>
 <instance part="SUPPLY18" gate="G$1" x="109.22" y="99.06"/>
 <instance part="U$4" gate="G$1" x="259.08" y="101.6"/>
 <instance part="U$5" gate="G$1" x="289.56" y="101.6"/>
 <instance part="R12" gate="G$1" x="121.92" y="20.32" rot="R270"/>
 <instance part="R14" gate="G$1" x="172.72" y="20.32" rot="R270"/>
-=======
-<instance part="R10" gate="G$1" x="101.6" y="99.06" rot="R90">
-<attribute name="MPN" x="101.6" y="99.06" size="1.778" layer="96" rot="R90" display="off"/>
-</instance>
-<instance part="SUPPLY18" gate="G$1" x="111.76" y="96.52"/>
-<instance part="U$4" gate="G$1" x="259.08" y="101.6">
-<attribute name="MPN" x="259.08" y="101.6" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="U$5" gate="G$1" x="289.56" y="101.6">
-<attribute name="MPN" x="289.56" y="101.6" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="R12" gate="G$1" x="121.92" y="20.32" rot="R270">
-<attribute name="MPN" x="121.92" y="20.32" size="1.778" layer="96" rot="R270" display="off"/>
-</instance>
-<instance part="R14" gate="G$1" x="172.72" y="20.32" rot="R270">
-<attribute name="MPN" x="172.72" y="20.32" size="1.778" layer="96" rot="R270" display="off"/>
-</instance>
->>>>>>> origin/master
 <instance part="SUPPLY19" gate="G$1" x="121.92" y="25.4"/>
 <instance part="SUPPLY20" gate="G$1" x="172.72" y="25.4"/>
-<instance part="U$6" gate="G$1" x="264.16" y="12.7">
-<attribute name="MPN" x="264.16" y="12.7" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="S1" gate="G$1" x="63.5" y="-66.04" rot="R90">
-<attribute name="MPN" x="63.5" y="-66.04" size="1.778" layer="96" rot="R90" display="off"/>
-</instance>
-<instance part="C8" gate="G$1" x="78.74" y="-66.04" rot="R180">
-<attribute name="MPN" x="78.74" y="-66.04" size="1.778" layer="96" rot="R180" display="off"/>
-</instance>
-<instance part="R16" gate="G$1" x="63.5" y="-50.8" rot="R90">
-<attribute name="MPN" x="63.5" y="-50.8" size="1.778" layer="96" rot="R90" display="off"/>
-</instance>
-<instance part="R21" gate="G$1" x="71.12" y="-58.42" rot="R180">
-<attribute name="MPN" x="71.12" y="-58.42" size="1.778" layer="96" rot="R180" display="off"/>
-</instance>
+<instance part="U$6" gate="G$1" x="264.16" y="12.7"/>
+<instance part="S1" gate="G$1" x="63.5" y="-66.04" rot="R90"/>
+<instance part="C8" gate="G$1" x="78.74" y="-66.04" rot="R180"/>
+<instance part="R16" gate="G$1" x="63.5" y="-50.8" rot="R90"/>
+<instance part="R21" gate="G$1" x="71.12" y="-58.42" rot="R180"/>
 <instance part="SUPPLY21" gate="G$1" x="63.5" y="-43.18"/>
 <instance part="GND15" gate="1" x="63.5" y="-76.2"/>
 <instance part="U$7" gate="G$1" x="223.52" y="-101.6"/>
@@ -9513,21 +8927,6 @@ Relative Humidity</text>
 <note version="6.3" minversion="6.2.2" severity="warning">
 Since Version 6.2.2 text objects can contain more than one line,
 which will not be processed correctly with this version.
-</note>
-<note version="8.2" severity="warning">
-Since Version 8.2, EAGLE supports online libraries. The ids
-of those online libraries will not be understood (or retained)
-with this version.
-</note>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports URNs for individual library
-assets (packages, symbols, and devices). The URNs of those assets
-will not be understood (or retained) with this version.
-</note>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports the association of 3D packages
-with devices in libraries, schematics, and board files. Those 3D
-packages will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>

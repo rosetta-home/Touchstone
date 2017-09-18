@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<<<<<<< HEAD
 <eagle version="8.3.2">
-=======
-<eagle version="8.3.1">
->>>>>>> origin/master
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -903,7 +899,7 @@
 </package>
 </packages>
 </library>
-<library name="SparkFun-Connectors" urn="urn:adsk.eagle:library:513">
+<library name="SparkFun-Connectors">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
 In this library you'll find connectors and sockets- basically anything that can be plugged into or onto.&lt;br&gt;&lt;br&gt;
 We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
@@ -1021,12 +1017,12 @@ Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
 </package>
 </packages>
 </library>
-<library name="linear" urn="urn:adsk.eagle:library:262">
+<library name="linear">
 <description>&lt;b&gt;Linear Devices&lt;/b&gt;&lt;p&gt;
 Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="SOT23" urn="urn:adsk.eagle:footprint:16354/1" library_version="1">
+<package name="SOT23">
 <description>&lt;b&gt;SMALL OUTLINE TRANSISTOR&lt;/b&gt;&lt;p&gt;
 reflow soldering</description>
 <wire x1="-1.973" y1="1.983" x2="1.973" y2="1.983" width="0.0508" layer="39"/>
@@ -1052,14 +1048,8 @@ reflow soldering</description>
 <rectangle x1="-0.5001" y1="-0.3" x2="0.5001" y2="0.3" layer="35"/>
 </package>
 </packages>
-<packages3d>
-<package3d name="SOT23" urn="urn:adsk.eagle:package:16489/2" type="model" library_version="2">
-<description>SMALL OUTLINE TRANSISTOR
-reflow soldering</description>
-</package3d>
-</packages3d>
 </library>
-<library name="SparkFun-Capacitors" urn="urn:adsk.eagle:library:510">
+<library name="SparkFun-Capacitors">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
 In this library you'll find resistors, capacitors, inductors, test points, jumper pads, etc.&lt;br&gt;&lt;br&gt;
 We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
@@ -1078,7 +1068,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 </library>
-<library name="SparkFun-Sensors" urn="urn:adsk.eagle:library:534">
+<library name="SparkFun-Sensors">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
 In this library you'll find sensors- accelerometers, gyros, compasses, magnetometers, light sensors, imagers, temp sensors, etc.&lt;br&gt;&lt;br&gt;
 We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
@@ -1087,7 +1077,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;&lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
-<package name="DFN-6-3X3-SI7021" urn="urn:adsk.eagle:footprint:39886/1" library_version="1">
+<package name="DFN-6-3X3-SI7021">
 <description>&lt;h3&gt;6-Pin DFN w/ Center Pad (3 x 3 mm) - Designed for Si7021&lt;/h3&gt;
 &lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Sensors/Weather/Si7021.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Specifications:
@@ -1141,22 +1131,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="-1.651" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
 </packages>
-<packages3d>
-<package3d name="DFN-6-3X3-SI7021" urn="urn:adsk.eagle:package:39974/1" type="box" library_version="1">
-<description>6-Pin DFN w/ Center Pad (3 x 3 mm) - Designed for Si7021
-Datasheet
-Specifications:
-
-Pin Count: 6 (+ center pad)
-Area: 3.0 x 3.0 x 1.21 mm
-Pitch: 1.0 mm
-
-Devices Using:
-
-SI7021
-</description>
-</package3d>
-</packages3d>
 </library>
 <library name="bosch-bmp280">
 <description>Digital Pressure Sensor</description>
@@ -1187,7 +1161,7 @@ SI7021
 </package>
 </packages>
 </library>
-<library name="SparkFun-Electromechanical" urn="urn:adsk.eagle:library:516">
+<library name="SparkFun-Electromechanical">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
 In this library you'll find anything that moves- switches, relays, buttons, potentiometers. Also, anything that goes on a board but isn't electrical in nature- screws, standoffs, etc.&lt;br&gt;&lt;br&gt;
 We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
@@ -1271,7 +1245,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 </package>
 </packages>
 </library>
-<library name="SparkFun-RF" urn="urn:adsk.eagle:library:531">
+<library name="SparkFun-RF">
 <description>&lt;h3&gt;SparkFun RF, WiFi, Cellular, and Bluetooth&lt;/h3&gt;
 In this library you'll find things that send or receive RF-- cellular modules, Bluetooth, WiFi, etc.
 &lt;br&gt;
@@ -1286,7 +1260,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
-<package name="RFM69HCW-XXXS2" urn="urn:adsk.eagle:footprint:39514/1" library_version="1">
+<package name="RFM69HCW-XXXS2">
 <description>&lt;h3&gt;Hope RF RFM69HCW RF Transciever&lt;/h3&gt;
 &lt;p&gt;&lt;a href="http://www.orcam.eu/res/Datablad/rfm69hcwv11.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
 <smd name="4" x="-7.5" y="1" dx="3" dy="1.2" layer="1"/>
@@ -1343,12 +1317,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <circle x="-9.089" y="8.392" radius="0.508" width="0" layer="21"/>
 </package>
 </packages>
-<packages3d>
-<package3d name="RFM69HCW-XXXS2" urn="urn:adsk.eagle:package:39566/1" type="box" library_version="1">
-<description>Hope RF RFM69HCW RF Transciever
-Datasheet</description>
-</package3d>
-</packages3d>
 </library>
 <library name="TagConnect">
 <packages>
@@ -1647,9 +1615,9 @@ September 2016</description>
 </package>
 </packages>
 </library>
-<library name="adafruit" urn="urn:adsk.eagle:library:420">
+<library name="adafruit@1">
 <packages>
-<package name="1X01-CLEANBIG" library_version="1">
+<package name="1X01-CLEANBIG">
 <pad name="1" x="0" y="0" drill="1.016" diameter="1.778"/>
 <text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
@@ -1738,7 +1706,7 @@ github.com/akstudios</description>
 </package>
 </packages>
 </library>
-<library name="SparkFun-Switches" urn="urn:adsk.eagle:library:535">
+<library name="SparkFun-Switches">
 <description>&lt;h3&gt;SparkFun Switches, Buttons, Encoders&lt;/h3&gt;
 In this library you'll find switches, buttons, joysticks, and anything that moves to create or disrupt an electrical connection.
 &lt;br&gt;
@@ -1753,7 +1721,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
-<package name="TACTILE_SWITCH_SMD_6.0X3.5MM" urn="urn:adsk.eagle:footprint:40106/1" library_version="1">
+<package name="TACTILE_SWITCH_SMD_6.0X3.5MM">
 <description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - SMD, 6.0 x 3.5 mm&lt;/h3&gt;
 &lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.sparkfun.com/datasheets/Components/1101.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
@@ -1782,13 +1750,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="-1.905" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
 </package>
 </packages>
-<packages3d>
-<package3d name="TACTILE_SWITCH_SMD_6.0X3.5MM" urn="urn:adsk.eagle:package:40165/1" type="box" library_version="1">
-<description>Momentary Switch (Pushbutton) - SPST - SMD, 6.0 x 3.5 mm
-Normally-open (NO) SPST momentary switches (buttons, pushbuttons).
-Datasheet</description>
-</package3d>
-</packages3d>
 </library>
 <library name="Adafruit PowerBoost 1000C Rev B">
 <description>Generated from &lt;b&gt;Adafruit PowerBoost 1000C Rev B.sch&lt;/b&gt;&lt;p&gt;
@@ -1872,7 +1833,7 @@ by exp-lbrs.ulp</description>
 </package>
 </packages>
 </library>
-<library name="SparkFun-DiscreteSemi" urn="urn:adsk.eagle:library:514">
+<library name="SparkFun-DiscreteSemi">
 <description>&lt;h3&gt;SparkFun Discrete Semiconductors&lt;/h3&gt;
 This library contains diodes, optoisolators, TRIACs, MOSFETs, transistors, etc. 
 &lt;br&gt;
@@ -1887,7 +1848,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
-<package name="SOD-523" urn="urn:adsk.eagle:footprint:38401/1" library_version="1">
+<package name="SOD-523">
 <description>SOD-523 (Small Outline Diode)</description>
 <smd name="C" x="0.7" y="0" dx="0.4" dy="0.4" layer="1"/>
 <smd name="A" x="-0.7" y="0" dx="0.4" dy="0.4" layer="1"/>
@@ -1913,11 +1874,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="1.1176" y1="0.3048" x2="1.1176" y2="-0.3048" width="0.2032" layer="21"/>
 </package>
 </packages>
-<packages3d>
-<package3d name="SOD-523" urn="urn:adsk.eagle:package:38442/1" type="box" library_version="1">
-<description>SOD-523 (Small Outline Diode)</description>
-</package3d>
-</packages3d>
 </library>
 </libraries>
 <attributes>
@@ -2107,17 +2063,17 @@ Please make sure your boards conform to these design rules.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U8" library="linear" library_urn="urn:adsk.eagle:library:262" package="SOT23" package3d_urn="urn:adsk.eagle:package:16489/2" value="MCP1703CB" x="33.4772" y="39.37" smashed="yes">
+<element name="U8" library="linear" package="SOT23" value="MCP1703CB" x="33.4772" y="39.37" smashed="yes">
 <attribute name="MF" value="" x="33.4772" y="39.37" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="MCP1703T-3302E/CB" x="33.4772" y="39.37" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="MCP1703T-2502E/CB" x="33.4772" y="39.37" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="34.925" y="40.3606" size="0.6096" layer="121" font="vector" align="bottom-center"/>
 <attribute name="OC_NEWARK" value="18T9177" x="33.4772" y="39.37" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C1" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="0805" value="1uF" x="30.5348" y="39.6034" smashed="yes" rot="R270">
+<element name="C1" library="SparkFun-Capacitors" package="0805" value="1uF" x="30.5348" y="39.6034" smashed="yes" rot="R270">
 <attribute name="MPN" value="CC0805ZRY5V8BB105" x="30.5348" y="39.6034" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="29.4981" y="38.4762" size="0.6096" layer="121" font="vector" rot="R90"/>
 </element>
-<element name="J3" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="USB-MICROB" value="USB-MICROB" x="25.4" y="49.276" smashed="yes" rot="R180">
+<element name="J3" library="SparkFun-Connectors" package="USB-MICROB" value="USB-MICROB" x="25.4" y="49.276" smashed="yes" rot="R180">
 <attribute name="MPN" value="47346-0001" x="25.4" y="49.276" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="29.3118" y="46.6146" size="0.6096" layer="121" font="vector"/>
 <attribute name="PROD_ID" value="CONN-09505" x="25.4" y="49.276" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2140,8 +2096,8 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MPN" value="BMP280" x="39.2326" y="48.2162" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="39.2634" y="50.4198" size="0.6096" layer="121" font="vector" rot="R180" align="bottom-center"/>
 </element>
-<element name="H1" library="SparkFun-Electromechanical" library_urn="urn:adsk.eagle:library:516" package="STAND-OFF" value="STAND-OFF" x="2.54" y="48.26" smashed="yes"/>
-<element name="H2" library="SparkFun-Electromechanical" library_urn="urn:adsk.eagle:library:516" package="STAND-OFF" value="STAND-OFF" x="2.54" y="2.54" smashed="yes"/>
+<element name="H1" library="SparkFun-Electromechanical" package="STAND-OFF" value="STAND-OFF" x="2.54" y="48.26" smashed="yes"/>
+<element name="H2" library="SparkFun-Electromechanical" package="STAND-OFF" value="STAND-OFF" x="2.54" y="2.54" smashed="yes"/>
 <element name="U$1" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="5.9436" y="48.5394"/>
 <element name="U$2" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="6.6802" y="2.6924"/>
 <element name="U$3" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="33.4518" y="47.3964"/>
@@ -2149,128 +2105,84 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MPN" value="TSL25911FN " x="25.4" y="2.6924" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="24.638" y="5.434" size="0.6096" layer="121" font="vector"/>
 </element>
-<element name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X02" value="" x="2.032" y="25.4" smashed="yes" rot="R90">
+<element name="J1" library="SparkFun-Connectors" package="1X02" value="" x="2.032" y="25.4" smashed="yes" rot="R90">
 <attribute name="NAME" x="0.508" y="23.495" size="0.6096" layer="121" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="VALUE" x="5.207" y="24.13" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C4" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="0805" value="10uF" x="37.4396" y="37.338" smashed="yes" rot="R270">
+<element name="C4" library="SparkFun-Capacitors" package="0805" value="10uF" x="37.4396" y="37.338" smashed="yes" rot="R270">
 <attribute name="MPN" value="CC0805KKX5R6BB106" x="37.4396" y="37.338" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="37.465" y="39.0017" size="0.6096" layer="121" font="vector" align="bottom-center"/>
 </element>
 <element name="X1" library="SparkFun" package="RESONATOR-SMD" value="16 MHz" x="20.8556" y="32.1578" smashed="yes" rot="R270">
-<attribute name="MPN" value="CSTCE16M0V53-R0" x="20.8556" y="32.1578" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="18.9252" y="32.7928" size="0.6096" layer="121" font="vector" rot="R270"/>
 </element>
 <element name="U7" library="Amphenol" package="PMS7003_RECEPTACLE_1.27MM_2X5" value="PMS7003" x="42.0662" y="49.206" smashed="yes" rot="MR270">
-<attribute name="MPN" value="20021311-00010T4LF" x="42.0662" y="49.206" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="NAME" x="31.2612" y="45.5714" size="0.6096" layer="121" font="vector"/>
 </element>
-<<<<<<< HEAD
-<element name="U11" library="SparkFun-RF" library_urn="urn:adsk.eagle:library:531" package="RFM69HCW-XXXS2" package3d_urn="urn:adsk.eagle:package:39566/1" value="915MHz" x="35.814" y="14.2094" smashed="yes" rot="R90">
-=======
 <element name="U11" library="SparkFun-RF" package="RFM69HCW-XXXS2" value="915MHz" x="35.814" y="14.2094" smashed="yes" rot="R90">
-<attribute name="MPN" value="RFM69HCW" x="35.814" y="14.2094" size="1.778" layer="27" rot="R90" display="off"/>
->>>>>>> origin/master
 <attribute name="NAME" x="27.2542" y="14.2094" size="0.6096" layer="121" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="PROD_ID" value="IC-11997" x="35.814" y="14.2094" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="H3" library="SparkFun-Electromechanical" library_urn="urn:adsk.eagle:library:516" package="STAND-OFF" value="STAND-OFF" x="48.26" y="25.4"/>
+<element name="H3" library="SparkFun-Electromechanical" package="STAND-OFF" value="STAND-OFF" x="48.26" y="25.4"/>
 <element name="TC1" library="TagConnect" package="TC2030-IDC-NL" value="TC2030-IDC-NL" x="34.0232" y="27.8404" smashed="yes" rot="R180">
 <attribute name="NAME" x="36.5886" y="29.6946" size="0.6096" layer="121" font="vector" rot="R180" align="bottom-center"/>
 </element>
-<<<<<<< HEAD
-<element name="U4" library="SparkFun-Sensors" library_urn="urn:adsk.eagle:library:534" package="DFN-6-3X3-SI7021" package3d_urn="urn:adsk.eagle:package:39974/1" value="SI7021" x="47.7256" y="48.1224" smashed="yes">
-=======
 <element name="U4" library="SparkFun-Sensors" package="DFN-6-3X3-SI7021" value="SI7021" x="47.7256" y="48.1224" smashed="yes">
-<attribute name="MPN" value="Si7021-A20-GM1" x="47.7256" y="48.1224" size="1.778" layer="27" display="off"/>
->>>>>>> origin/master
 <attribute name="NAME" x="47.7256" y="49.9258" size="0.6096" layer="121" font="vector" align="bottom-center"/>
 <attribute name="PROD_ID" value="IC-13093" x="47.7256" y="48.1224" size="1.778" layer="27" display="off"/>
 </element>
 <element name="D1" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER_SOD-123" value="SOD123" x="28.4" y="42.354" smashed="yes" rot="R90">
-<attribute name="MPN" value="SD103AW-13-F" x="28.4" y="42.354" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="30.0256" y="41.9476" size="0.6096" layer="121" font="vector" rot="R90"/>
 </element>
 <element name="U2" library="ftdi_ft231xq-r" package="FTDI_FT231XQ-R_PACKAGE" value="FT231XQ-R" x="14.7912" y="43.053" smashed="yes" rot="R90">
-<attribute name="MPN" value="FT231XQ-R" x="14.7912" y="43.053" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="18.0812" y="40.7248" size="0.6096" layer="121" font="vector" rot="R180"/>
 </element>
 <element name="C12" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="0.1uF" x="34.7056" y="33.0316" smashed="yes">
-<attribute name="MPN" value="GRM155R71C104KA88J" x="34.7056" y="33.0316" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="33.9436" y="33.5079" size="0.6096" layer="121" font="vector"/>
 </element>
 <element name="C15" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="0.1uF" x="28.8888" y="33.0132" smashed="yes" rot="R90">
-<attribute name="MPN" value="GRM155R71C104KA88J" x="28.8888" y="33.0132" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="30.0635" y="32.2512" size="0.6096" layer="121" font="vector" rot="R90"/>
 </element>
 <element name="R5" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="10K" x="32.6552" y="33.0384" smashed="yes" rot="R180">
-<attribute name="MPN" value="RC0402FR-0710KL" x="32.6552" y="33.0384" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="33.2902" y="32.5113" size="0.6096" layer="121" font="vector" rot="R180"/>
 </element>
 <element name="R6" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="10K" x="32.3088" y="35.814" smashed="yes" rot="R90">
-<attribute name="MPN" value="RC0402FR-0710KL" x="32.3088" y="35.814" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="33.4581" y="35.3314" size="0.6096" layer="121" font="vector" rot="R90"/>
 </element>
 <element name="R13" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="10K" x="31.1912" y="35.814" smashed="yes" rot="R90">
-<attribute name="MPN" value="RC0402FR-0710KL" x="31.1912" y="35.814" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="30.6387" y="35.052" size="0.6096" layer="121" font="vector" rot="R90"/>
 </element>
 <element name="C6" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="0.1uF" x="26.7572" y="43.7" smashed="yes" rot="R90">
-<attribute name="MPN" value="GRM155R71C104KA88J" x="26.7572" y="43.7" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="27.3946" y="42.5369" size="0.6096" layer="121" font="vector" rot="R180"/>
 </element>
 <element name="C7" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="0.1uF" x="21.6674" y="2.1586" smashed="yes" rot="R90">
-<attribute name="MPN" value="GRM155R71C104KA88J" x="21.6674" y="2.1586" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="21.0387" y="1.676" size="0.6096" layer="121" font="vector" rot="R90"/>
 </element>
 <element name="C11" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="0.1uF" x="35.9156" y="37.7444" smashed="yes" rot="R90">
-<attribute name="MPN" value="GRM155R71C104KA88J" x="35.9156" y="37.7444" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="36.2966" y="36.5569" size="0.6096" layer="121" font="vector" rot="R180"/>
 </element>
-<<<<<<< HEAD
-=======
-<element name="C13" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="0.1uF" x="46.3206" y="34.2476" smashed="yes" rot="R180">
-<attribute name="MPN" value="GRM155R71C104KA88J" x="46.3206" y="34.2476" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="47.1588" y="35.4985" size="0.6096" layer="121" font="vector" rot="R180"/>
-</element>
-<element name="R1" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="10K" x="41.4776" y="25.7598" smashed="yes" rot="R180">
-<attribute name="MPN" value="RC0402FR-0710KL" x="41.4776" y="25.7598" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="40.5378" y="26.0455" size="0.6096" layer="121" font="vector" rot="R180"/>
-</element>
-<element name="R2" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="10K" x="41.4804" y="24.7372" smashed="yes">
-<attribute name="MPN" value="RC0402FR-0710KL" x="41.4804" y="24.7372" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="40.5362" y="25.0277" size="0.6096" layer="121" font="vector" rot="R180"/>
-</element>
->>>>>>> origin/master
 <element name="R7" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="10K" x="25.3956" y="6.9136" smashed="yes" rot="R270">
-<attribute name="MPN" value="RC0402FR-0710KL" x="25.3956" y="6.9136" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="24.1955" y="7.6502" size="0.6096" layer="121" font="vector" rot="R270"/>
 </element>
 <element name="R11" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="27" x="24.1064" y="43.7" smashed="yes" rot="R90">
-<attribute name="MPN" value="RC0402JR-0727RL" x="24.1064" y="43.7" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="23.3038" y="41.9527" size="0.6096" layer="121" font="vector"/>
 </element>
 <element name="R15" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="27" x="25.4064" y="43.7" smashed="yes" rot="R270">
-<attribute name="MPN" value="RC0402JR-0727RL" x="25.4064" y="43.7" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="24.6006" y="44.7295" size="0.6096" layer="121" font="vector"/>
 </element>
 <element name="R17" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="470" x="13.4044" y="46.609" smashed="yes">
-<attribute name="MPN" value="RC0402FR-07470RL" x="13.4044" y="46.609" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="10.7374" y="46.3233" size="0.6096" layer="121" font="vector"/>
 </element>
 <element name="R18" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="470" x="17.4292" y="46.609" smashed="yes" rot="R180">
-<attribute name="MPN" value="RC0402FR-07470RL" x="17.4292" y="46.609" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="20.3502" y="46.9201" size="0.6096" layer="121" font="vector" rot="R180"/>
 </element>
 <element name="R19" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="1K" x="11.423" y="44.0182" smashed="yes" rot="R270">
-<attribute name="MPN" value="RC0402JR-071KL" x="11.423" y="44.0182" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="10.8123" y="43.43" size="0.6096" layer="121" font="vector" rot="R90"/>
 </element>
 <element name="R20" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="1K" x="14.3186" y="38.6288" smashed="yes" rot="R180">
-<attribute name="MPN" value="RC0402JR-071KL" x="14.3186" y="38.6288" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="15.233" y="39.7273" size="0.6096" layer="121" font="vector" rot="R180"/>
 </element>
-<element name="J2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X02" value="" x="2.032" y="30.48" smashed="yes" rot="R90">
+<element name="J2" library="SparkFun-Connectors" package="1X02" value="" x="2.032" y="30.48" smashed="yes" rot="R90">
 <attribute name="NAME" x="0.508" y="35.56" size="0.6096" layer="121" font="vector" rot="R270"/>
 <attribute name="VALUE" x="5.207" y="29.21" size="1.27" layer="27" rot="R90"/>
 </element>
@@ -2283,136 +2195,82 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="DESCRIPTION" value="ATmega Series 20 MHz 32 KB Flash 2 KB SRAM 8-Bit Microcontroller - QFN-32" x="25.4" y="34.798" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="Atmel" x="25.4" y="34.798" size="1.778" layer="27" display="off"/>
 <attribute name="MP" value="ATMEGA328P-MU" x="25.4" y="34.798" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="ATMEGA328P-MU" x="25.4" y="34.798" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="22.859590625" y="37.746690625" size="0.6096" layer="121" font="vector"/>
 <attribute name="PACKAGE" value="QFN-32 Atmel" x="25.4" y="34.798" size="1.778" layer="27" display="off"/>
 <attribute name="PRICE" value="2.55 USD" x="25.4" y="34.798" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C16" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="0.1uF" x="45.6652" y="38.2522" smashed="yes" rot="R180">
-<<<<<<< HEAD
 <attribute name="NAME" x="46.605" y="39.5031" size="0.6096" layer="121" font="vector" rot="R180"/>
-=======
-<attribute name="MPN" value="GRM155R71C104KA88J" x="45.6652" y="38.2522" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="46.605" y="37.6235" size="0.6096" layer="121" font="vector" rot="R180"/>
->>>>>>> origin/master
 </element>
 <element name="U13" library="CCS811" package="LGA" value="CCS811-I2C" x="40.1614" y="1.0634" smashed="yes" rot="R90">
-<attribute name="MPN" value="CCS811" x="40.1614" y="1.0634" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="37.57" y="4.83" size="0.6096" layer="121" font="vector" rot="R180"/>
 </element>
 <element name="C17" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="0.1uF" x="8.0306" y="40.3604" smashed="yes" rot="R180">
-<attribute name="MPN" value="GRM155R71C104KA88J" x="8.0306" y="40.3604" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="8.9958" y="41.6621" size="0.6096" layer="121" font="vector" rot="R180"/>
 </element>
-<element name="JP1" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="1X01-CLEANBIG" value="Antenna" x="47.625" y="19.304" smashed="yes">
+<element name="JP1" library="adafruit@1" package="1X01-CLEANBIG" value="Antenna" x="47.625" y="19.304" smashed="yes">
 <attribute name="NAME" x="46.7868" y="21.2852" size="0.6096" layer="121" font="vector"/>
 </element>
 <element name="U1" library="NeoPixel Nano 2427" package="SK6805-2427" value="NEOPIXEL_NANO_2427" x="24.1046" y="24.1046" smashed="yes">
-<attribute name="MPN" value="SK6805-2427" x="24.1046" y="24.1046" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="28.829" y="24.8666" size="0.6096" layer="121" font="vector" rot="R90"/>
-<attribute name="PROD_ID" value="3484" x="24.1046" y="24.1046" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C18" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="1uF" x="24.9936" y="21.6662" smashed="yes" rot="R180">
-<attribute name="MPN" value="GRM155R60J105KE19D" x="24.9936" y="21.6662" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="25.8318" y="20.9867" size="0.6096" layer="121" font="vector" rot="R180"/>
 </element>
 <element name="R4" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="470" x="23.0886" y="29.0322" smashed="yes" rot="R270">
-<attribute name="MPN" value="RC0402FR-07470RL" x="23.0886" y="29.0322" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="23.5903" y="29.6418" size="0.6096" layer="121" font="vector" rot="R270"/>
 </element>
 <element name="U14" library="IAQ-Core" package="IAQ-CORE-C" value="IAQ-CORE-C" x="5.08" y="7.493" smashed="yes">
-<attribute name="MPN" value="IAQ-CORE C" x="5.08" y="7.493" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="5.08" y="25.7302" size="0.6096" layer="121" font="vector"/>
 </element>
 <element name="C3" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="0.1uF" x="22.86" y="17.9832" smashed="yes" rot="R270">
-<attribute name="MPN" value="GRM155R71C104KA88J" x="22.86" y="17.9832" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="23.6411" y="18.6182" size="0.6096" layer="121" font="vector" rot="R270"/>
 </element>
 <element name="C19" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="0.1uF" x="37.4142" y="48.6918" smashed="yes" rot="R90">
-<attribute name="MPN" value="GRM155R71C104KA88J" x="37.4142" y="48.6918" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="36.7347" y="47.9044" size="0.6096" layer="121" font="vector" rot="R90"/>
 </element>
 <element name="C20" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="0.1uF" x="38.9636" y="46.0502" smashed="yes" rot="R180">
-<attribute name="MPN" value="GRM155R71C104KA88J" x="38.9636" y="46.0502" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="39.878" y="45.4215" size="0.6096" layer="121" font="vector" rot="R180"/>
 </element>
-<<<<<<< HEAD
-=======
-<element name="C10" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="4.7uF" x="45.339" y="28.1686" smashed="yes">
-<attribute name="MPN" value="GRM155R60J475ME47D" x="45.339" y="28.1686" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="46.4312" y="27.8829" size="0.6096" layer="121" font="vector"/>
-</element>
-<element name="C14" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="1uF" x="41.4782" y="26.797" smashed="yes" rot="R180">
-<attribute name="MPN" value="GRM155R60J105KE19D" x="41.4782" y="26.797" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="40.5384" y="27.0827" size="0.6096" layer="121" font="vector" rot="R180"/>
-</element>
-<element name="C21" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="100pF" x="43.688" y="29.1846" smashed="yes" rot="R90">
-<attribute name="MPN" value="GRM1555C1H101JA01D" x="43.688" y="29.1846" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="43.2625" y="28.448" size="0.6096" layer="121" font="vector" rot="R90"/>
-</element>
->>>>>>> origin/master
 <element name="C2" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="1uF" x="41.1226" y="2.6924" smashed="yes" rot="R90">
-<attribute name="MPN" value="GRM155R60J105KE19D" x="41.1226" y="2.6924" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="41.783" y="4.4259" size="0.6096" layer="121" font="vector" rot="R180"/>
 </element>
 <element name="R9" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="100K" x="42.2402" y="2.6924" smashed="yes" rot="R270">
-<attribute name="MPN" value="RC0402FR-07100KL" x="42.2402" y="2.6924" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="41.783" y="0.8573" size="0.6096" layer="121" font="vector"/>
 </element>
 <element name="U15" library="VLP-450-F" package="VLP-450-F" value="VLP-450-F" x="23.368" y="23.2664" smashed="yes">
-<attribute name="MPN" value="VLP-550-F" x="23.368" y="23.2664" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="22.733" y="24.5872" size="0.6096" layer="121" font="vector" rot="R90"/>
 </element>
 <element name="U16" library="VLP-450-F" package="VLP-450-F" value="VLP-450-F" x="23.3172" y="4.7752" smashed="yes" rot="R270">
-<attribute name="MPN" value="VLP-650-F" x="23.3172" y="4.7752" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="28.194" y="3.7846" size="0.6096" layer="121" font="vector" rot="R270"/>
 </element>
 <element name="C5" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="0.1uF" x="18.9484" y="35.052" smashed="yes" rot="R270">
-<attribute name="MPN" value="GRM155R71C104KA88J" x="18.9484" y="35.052" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="20.0469" y="34.544" size="0.6096" layer="121" font="vector" rot="R90"/>
 </element>
 <element name="R10" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="10K" x="17.3736" y="36.322" smashed="yes">
-<attribute name="MPN" value="RC0402FR-0710KL" x="17.3736" y="36.322" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="16.637" y="35.1219" size="0.6096" layer="121" font="vector"/>
 </element>
-<element name="U$4" library="0878980426" package="CONN_4POS_VERT_2.54_SMD" value="0878980426" x="6.477" y="36.322" smashed="yes">
-<attribute name="MPN" value="0878980426" x="6.477" y="36.322" size="1.778" layer="27" display="off"/>
-</element>
-<element name="U$5" library="0878980426" package="CONN_4POS_VERT_2.54_SMD" value="0878980426" x="6.477" y="6.7818">
-<attribute name="MPN" value="0878980426" x="6.477" y="6.7818" size="1.778" layer="27" display="off"/>
-</element>
+<element name="U$4" library="0878980426" package="CONN_4POS_VERT_2.54_SMD" value="0878980426" x="6.477" y="36.322" smashed="yes"/>
+<element name="U$5" library="0878980426" package="CONN_4POS_VERT_2.54_SMD" value="0878980426" x="6.477" y="6.7818"/>
 <element name="R12" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="100K" x="33.7058" y="2.3622" smashed="yes">
-<attribute name="MPN" value="RC0402FR-07100KL" x="33.7058" y="2.3622" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="33.782" y="2.8385" size="0.6096" layer="121" font="vector" align="bottom-center"/>
 </element>
 <element name="R14" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="100K" x="31.6484" y="2.3622" smashed="yes" rot="R180">
-<attribute name="MPN" value="RC0402FR-07100KL" x="31.6484" y="2.3622" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="31.7246" y="3.4607" size="0.6096" layer="121" font="vector" rot="R180" align="bottom-center"/>
 </element>
-<<<<<<< HEAD
 <element name="U$6" library="CONN_HDR_1.27MM_SMD_4POS" package="CONN_HDR_1.27MM_SMD_4POS" value="CONN_HDR_1.27MM_SMD_4POS" x="45.2882" y="43.1038"/>
-<element name="S1" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" package="TACTILE_SWITCH_SMD_6.0X3.5MM" package3d_urn="urn:adsk.eagle:package:40165/1" value="MOMENTARY-SWITCH-SPST-SMD-6.0X3.5MM" x="2.2098" y="40.9448" smashed="yes" rot="R90">
-=======
-<element name="U$6" library="CONN_HDR_1.27MM_SMD_4POS" package="CONN_HDR_1.27MM_SMD_4POS" value="CONN_HDR_1.27MM_SMD_4POS" x="45.2882" y="43.1038">
-<attribute name="MPN" value="M50-3630442" x="45.2882" y="43.1038" size="1.778" layer="27" display="off"/>
-</element>
 <element name="S1" library="SparkFun-Switches" package="TACTILE_SWITCH_SMD_6.0X3.5MM" value="MOMENTARY-SWITCH-SPST-SMD-6.0X3.5MM" x="2.2098" y="40.9448" smashed="yes" rot="R90">
-<attribute name="MPN" value="RS-032G05A3-SM RT" x="2.2098" y="40.9448" size="1.778" layer="27" rot="R90" display="off"/>
->>>>>>> origin/master
 <attribute name="NAME" x="0.3048" y="44.8818" size="0.6096" layer="121" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="PROD_ID" value="SWCH-00815" x="2.2098" y="40.9448" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SF_SKU" value="COM-08229" x="2.2098" y="40.9448" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C8" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="0.1uF" x="5.588" y="43.0022" smashed="yes">
-<attribute name="MPN" value="GRM155R71C104KA88J" x="5.588" y="43.0022" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="5.6388" y="41.8275" size="0.6096" layer="121" font="vector" align="bottom-center"/>
 </element>
 <element name="R16" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="10K" x="4.9022" y="44.8564" smashed="yes" rot="R270">
-<attribute name="MPN" value="RC0402FR-0710KL" x="4.9022" y="44.8564" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="3.7529" y="44.9072" size="0.6096" layer="121" font="vector" rot="R270" align="bottom-center"/>
 </element>
 <element name="R21" library="Adafruit Feather 32u4 Bluefruit LE" package="MICROBUILDER__0402MP" value="10K" x="6.096" y="44.8564" smashed="yes" rot="R90">
-<attribute name="MPN" value="RC0402FR-0710KL" x="6.096" y="44.8564" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="7.3469" y="45.0342" size="0.6096" layer="121" font="vector" rot="R90" align="bottom-center"/>
 </element>
 <element name="U$7" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="37.2872" y="11.4554"/>
@@ -2469,10 +2327,10 @@ Please make sure your boards conform to these design rules.</description>
 <element name="R32" library="Adafruit PowerBoost 1000C Rev B" package="MICROBUILDER__0402MP" value="100" x="36.83" y="32.6644" smashed="yes" rot="R270">
 <attribute name="NAME" x="35.7823" y="33.6042" size="0.6096" layer="121" font="vector" rot="R270"/>
 </element>
-<element name="D3" library="SparkFun-DiscreteSemi" library_urn="urn:adsk.eagle:library:514" package="SOD-523" package3d_urn="urn:adsk.eagle:package:38442/1" value="120mA/40V/370mV" x="41.3004" y="26.6192" smashed="yes">
+<element name="D3" library="SparkFun-DiscreteSemi" package="SOD-523" value="120mA/40V/370mV" x="41.3004" y="26.6192" smashed="yes">
 <attribute name="PROD_ID" value="DIO-11018" x="6.5786" y="-23.0632" size="1.778" layer="27" display="off"/>
 </element>
-<element name="D4" library="SparkFun-DiscreteSemi" library_urn="urn:adsk.eagle:library:514" package="SOD-523" package3d_urn="urn:adsk.eagle:package:38442/1" value="120mA/40V/370mV" x="43.7388" y="26.6192" smashed="yes">
+<element name="D4" library="SparkFun-DiscreteSemi" package="SOD-523" value="120mA/40V/370mV" x="43.7388" y="26.6192" smashed="yes">
 <attribute name="PROD_ID" value="DIO-11018" x="6.2738" y="-24.5872" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
@@ -3996,21 +3854,4 @@ Please make sure your boards conform to these design rules.</description>
 </errors>
 </board>
 </drawing>
-<compatibility>
-<note version="8.2" severity="warning">
-Since Version 8.2, EAGLE supports online libraries. The ids
-of those online libraries will not be understood (or retained)
-with this version.
-</note>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports URNs for individual library
-assets (packages, symbols, and devices). The URNs of those assets
-will not be understood (or retained) with this version.
-</note>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports the association of 3D packages
-with devices in libraries, schematics, and board files. Those 3D
-packages will not be understood (or retained) with this version.
-</note>
-</compatibility>
 </eagle>
