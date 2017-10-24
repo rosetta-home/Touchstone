@@ -1,4 +1,4 @@
-// v0.56c - 8/24/2017
+// v0.5.7 - 10/19/2017
 // Developed by Akram Ali
 
 // www.crtlabs.org
@@ -236,7 +236,7 @@ void readSensors()
   co2 = (0.7*ppm) + (0.3*_ppm);  // real-time exponential smoothing of data with a damping factor of 0.3
   _ppm = (int)co2;  // save old reading;
 
-  
+  /*
   // ADMP401 mic for sound level
   float sumADC=0.0;
   for(int i=0;i<5;i++)
@@ -248,7 +248,18 @@ void readSensors()
   sound = (20 * log10(volts/0.007943)) - 42 + 94 - 60;  // VRMS = 0.007943; -42dB is sensitivity of ADMP401 mic; 1 Pa = 94 dB SPL RMS; 60dB is gain of amplifier
   // the above is uncalibrated sound level - needs to be calibrated with reference to an accurate sound level meter in varying SPLs, frequencies and environments.
   //sound = averageADC;
+  */
 
+  // Sound levels using electret mic
+  float sumADC=0.0;
+  for(int i=0;i<5;i++)
+  {
+     sumADC = sumADC + analogRead(A0); // take avg of 5 readings
+  }
+  float averageADC = sumADC/5.0;
+  sound = 52.864 * (exp(0.0011 * averageADC));  // roughly calibrated sound levels (in dB) in a typical office environment using a reference sound level meter (SLM01)
+
+  
   // BMP280 air pressure sensor
   bme.begin();
   float bar = bme.readPressure();
