@@ -39,7 +39,6 @@
 "R11";"27";"MICROBUILDER_RESISTOR_0402MP";"MICROBUILDER__0402MP";"Resistors";"";"";"";"";"RC0402JR-0727RL";"";"";"";"";"";"";"";
 "R12";"100K";"MICROBUILDER_RESISTOR_0402MP";"MICROBUILDER__0402MP";"Resistors";"";"";"";"";"RC0402FR-07100KL";"";"";"";"";"";"";"";
 "R13";"10K";"MICROBUILDER_RESISTOR_0402MP";"MICROBUILDER__0402MP";"Resistors";"";"";"";"";"RC0402JR-0710KL";"";"";"";"";"";"";"";
-"R14";"100K";"MICROBUILDER_RESISTOR_0402MP";"MICROBUILDER__0402MP";"Resistors";"";"";"";"";"RC0402FR-07100KL";"";"";"";"";"";"";"";
 "R15";"27";"MICROBUILDER_RESISTOR_0402MP";"MICROBUILDER__0402MP";"Resistors";"";"";"";"";"RC0402JR-0727RL";"";"";"";"";"";"";"";
 "R16";"10K";"MICROBUILDER_RESISTOR_0402MP";"MICROBUILDER__0402MP";"Resistors";"";"";"";"";"RC0402JR-0710KL";"";"";"";"";"";"";"";
 "R17";"470";"MICROBUILDER_RESISTOR_0402MP";"MICROBUILDER__0402MP";"Resistors";"";"";"";"";"RC0402JR-07470RL";"";"";"";"";"";"";"";
@@ -49,7 +48,7 @@
 "R21";"10K";"MICROBUILDER_RESISTOR_0402MP";"MICROBUILDER__0402MP";"Resistors";"";"";"";"";"RC0402JR-0710KL";"";"";"";"";"";"";"";
 "R22";"1K";"MICROBUILDER_RESISTOR_0402MP";"MICROBUILDER__0402MP";"Resistors";"";"";"";"";"RC0402JR-071KL";"";"";"";"";"";"";"";
 "R23";"2.2K";"MICROBUILDER_RESISTOR_0402MP";"MICROBUILDER__0402MP";"Resistors";"";"";"";"";"RC0402FR-072K2L";"";"";"";"";"";"";"";
-"R24";"470K";"MICROBUILDER_RESISTOR_0402MP";"MICROBUILDER__0402MP";"Resistors";"";"";"";"";"RC0402JR-07470KL";"";"";"";"";"";"";"";
+"R24";"1M";"MICROBUILDER_RESISTOR_0402MP";"MICROBUILDER__0402MP";"Resistors";"";"";"";"";"RC0402FR-071ML";"";"";"";"";"";"";"";
 "R25";"100";"MICROBUILDER_RESISTOR_0402MP";"MICROBUILDER__0402MP";"Resistors";"";"";"";"";"RC0402FR-07100RL";"";"";"";"";"";"";"";
 "R26";"10K";"MICROBUILDER_RESISTOR_0402MP";"MICROBUILDER__0402MP";"Resistors";"";"";"";"";"RC0402JR-0710KL";"";"";"";"";"";"";"";
 "R27";"1K";"MICROBUILDER_RESISTOR_0402MP";"MICROBUILDER__0402MP";"Resistors";"";"";"";"";"RC0402JR-071KL";"";"";"";"";"";"";"";
