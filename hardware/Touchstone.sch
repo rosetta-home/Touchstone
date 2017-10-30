@@ -7571,11 +7571,7 @@ Diode with low voltage drop</description>
 <part name="R12" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="100K">
 <attribute name="MPN" value="RC0402FR-07100KL"/>
 </part>
-<part name="R14" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="100K">
-<attribute name="MPN" value="RC0402FR-07100KL"/>
-</part>
 <part name="SUPPLY19" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="SUPPLY20" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="U$6" library="CONN_HDR_1.27MM_SMD_4POS" deviceset="CONN_HDR_1.27MM_SMD_4POS" device="">
 <attribute name="MPN" value="M50-3630442"/>
 </part>
@@ -7603,8 +7599,8 @@ Diode with low voltage drop</description>
 <part name="R23" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="2.2K">
 <attribute name="MPN" value="RC0402FR-072K2L"/>
 </part>
-<part name="R24" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="470K">
-<attribute name="MPN" value="RC0402JR-07470KL"/>
+<part name="R24" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="1M">
+<attribute name="MPN" value="RC0402FR-071ML"/>
 </part>
 <part name="SUPPLY22" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="C22" library="Adafruit Feather 32u4 Bluefruit LE" deviceset="MICROBUILDER_CAP_CERAMIC" device="_0402MP" value="10uF">
@@ -7728,7 +7724,8 @@ Relative Humidity</text>
 (Reconfigure)</text>
 <text x="-10.16" y="66.04" size="1.27" layer="91" font="vector">47K = low gain
 100K = default gain
-470K = high gain</text>
+470K = high gain
+1M = very high gain</text>
 </plain>
 <instances>
 <instance part="GND1" gate="1" x="-38.1" y="-106.68"/>
@@ -7929,11 +7926,7 @@ Relative Humidity</text>
 <instance part="R12" gate="G$1" x="121.92" y="20.32" rot="R270">
 <attribute name="MPN" x="121.92" y="20.32" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
-<instance part="R14" gate="G$1" x="172.72" y="20.32" rot="R270">
-<attribute name="MPN" x="172.72" y="20.32" size="1.778" layer="96" rot="R270" display="off"/>
-</instance>
 <instance part="SUPPLY19" gate="G$1" x="121.92" y="25.4"/>
-<instance part="SUPPLY20" gate="G$1" x="172.72" y="25.4"/>
 <instance part="U$6" gate="G$1" x="264.16" y="12.7">
 <attribute name="MPN" x="264.16" y="12.7" size="1.778" layer="96" display="off"/>
 </instance>
@@ -8387,10 +8380,6 @@ Relative Humidity</text>
 <segment>
 <pinref part="R12" gate="G$1" pin="1"/>
 <pinref part="SUPPLY19" gate="G$1" pin="VCC"/>
-</segment>
-<segment>
-<pinref part="R14" gate="G$1" pin="1"/>
-<pinref part="SUPPLY20" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
 <pinref part="U$6" gate="G$1" pin="P$1"/>
@@ -8892,14 +8881,8 @@ Relative Humidity</text>
 </segment>
 <segment>
 <pinref part="U13" gate="G$1" pin="WAKE"/>
-<wire x1="165.1" y1="7.62" x2="170.18" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="7.62" x2="172.72" y2="7.62" width="0.1524" layer="91"/>
 <label x="165.1" y="7.62" size="1.778" layer="95"/>
-<wire x1="170.18" y1="7.62" x2="172.72" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="7.62" x2="170.18" y2="12.7" width="0.1524" layer="91"/>
-<junction x="170.18" y="7.62"/>
-<pinref part="R14" gate="G$1" pin="2"/>
-<wire x1="170.18" y1="12.7" x2="172.72" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="12.7" x2="172.72" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D7" class="0">
