@@ -72,10 +72,26 @@ float co2;
 
 char dataPacket[150];
 
-ISR(WDT_vect)  // Interrupt service routine for WatchDog Timer
+ISR(WDT_vect)  // Interrupt Service Routine for WatchDog Timer
 {
   wdt_disable();  // disable watchdog
 }
+
+
+void ISR_button()  // Interrupt Service Routine for button press
+{ 
+  for (int i = 0; i <= 255; i++)
+  {
+      colorWipe(strip.Color(0,0,i), 1);  // blue
+  }
+  for (int i = 255; i > 0; i--)
+  {
+      colorWipe(strip.Color(0,0,i), 2);  // blue
+  }
+  colorWipe(strip.Color(0, 0, 0), 1); // turn pixel off
+  strip.show();
+}
+
 
 void setup()
 {
@@ -83,6 +99,9 @@ void setup()
 
   Serial.begin(115200);
   Serial.println("Setup");
+
+  //pinMode(3, INPUT);
+  attachInterrupt(1, ISR_button, FALLING);  // enable hardware interrupt on pin 3 when pin goes from HIGH to LOW
 
   ccs811_sensor.begin(uint8_t(ADDR), uint8_t(WAKE_PIN));  // initialize CCS811 sensor
   
@@ -161,7 +180,7 @@ void loop()
   
   Serial.println(dataPacket);
   delay(50);
-
+ 
   // send datapacket
   radio.sendWithRetry(GATEWAYID, dataPacket, strlen(dataPacket), 5, 100);  // send data, retry 5 times with delay of 100ms between each retry
   dataPacket[0] = (char)0; // clearing first byte of char array clears the array
@@ -195,6 +214,7 @@ void readSensors()
   sensor.begin();
   float temp = sensor.readTemperature();
   float rh = sensor.readHumidity();
+  
   
   // Light Intensity - TSL2591
   tsl.begin();
@@ -252,11 +272,11 @@ void readSensors()
 
   // Sound levels using electret mic
   float sumADC=0.0;
-  for(int i=0;i<5;i++)
+  for(int i=0;i<2;i++)
   {
-     sumADC = sumADC + analogRead(A0); // take avg of 5 readings
+     sumADC = sumADC + analogRead(A0); // take avg of 2 readings
   }
-  float averageADC = sumADC/5.0;
+  float averageADC = sumADC/2.0;
   sound = 52.864 * (exp(0.0011 * averageADC));  // roughly calibrated sound levels (in dB) in a typical office environment using a reference sound level meter (SLM01)
 
   

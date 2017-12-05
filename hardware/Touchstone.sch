@@ -7599,7 +7599,7 @@ Diode with low voltage drop</description>
 <part name="R23" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="2.2K">
 <attribute name="MPN" value="RC0402FR-072K2L"/>
 </part>
-<part name="R24" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="1M">
+<part name="R24" library="Adafruit PowerBoost 1000C Rev B" deviceset="MICROBUILDER_RESISTOR" device="_0402MP" value="470K">
 <attribute name="MPN" value="RC0402FR-071ML"/>
 </part>
 <part name="SUPPLY22" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>

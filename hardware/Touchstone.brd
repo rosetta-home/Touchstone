@@ -2333,7 +2333,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MPN" value="RC0402FR-072K2L" x="48.006" y="35.8648" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="47.7203" y="38.6842" size="0.6096" layer="121" font="vector" rot="R270"/>
 </element>
-<element name="R24" library="Adafruit PowerBoost 1000C Rev B" package="MICROBUILDER__0402MP" value="1M" x="42.672" y="33.0708" smashed="yes">
+<element name="R24" library="Adafruit PowerBoost 1000C Rev B" package="MICROBUILDER__0402MP" value="470K" x="42.672" y="33.0708" smashed="yes">
 <attribute name="MPN" value="RC0402FR-071ML" x="42.672" y="33.0708" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="41.9862" y="33.5979" size="0.6096" layer="121" font="vector"/>
 </element>
