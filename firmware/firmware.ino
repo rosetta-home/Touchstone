@@ -27,6 +27,7 @@
 //#define LED           9 // led pin
 #define PIN           6 // NeoPixel driver pin
 #define SENSOR_SAMPLE 8000
+#define FLASH_INTERVAL 500
 
 // define objects
 RFM69 radio;
@@ -43,16 +44,13 @@ uint32_t green = strip.Color(0, 255, 0);
 uint32_t blue = strip.Color(0, 0, 255);
 uint32_t yellow = strip.Color(255, 255, 0);
 uint32_t white = strip.Color(255, 255, 255);
+uint32_t off = strip.Color(0, 0, 0);
 
-
-/*
-// define IAQ core global variables
-#define iaqaddress 0x5A
-uint16_t co2;
-uint8_t statu;
-int32_t resistance;
-uint16_t tvoc;
-*/
+//timers for LED flashing and sensor sampling
+int now = 0;
+int last = 0;
+int last_flash = 0;
+bool led_state = 0;
 
 // define CCS811 global variables
 #define ADDR      0x5B
@@ -166,15 +164,17 @@ void sleep()
 void receiveAction(){
   if (radio.receiveDone()){
    char incoming_action[10];
-   Serial.print("Got Data: ");
    if (radio.DATALEN > 0){
      for(byte i = 0; i < radio.DATALEN; i++){
        incoming_action[i] = (char)radio.DATA[i];
      }
    }
-   Serial.println(incoming_action);
-   memcpy(current_action, incoming_action, 10);
-   memset(incoming_action, 0, sizeof incoming_action);
+   if(incoming_action[0] != '$'){
+     Serial.print("Got Data: ");
+     Serial.println(incoming_action);
+     memcpy(current_action, incoming_action, 10);
+     memset(incoming_action, 0, sizeof incoming_action);
+   }
    if (radio.ACKRequested()){
     byte theNodeID = radio.SENDERID;
     radio.sendACK();
@@ -182,51 +182,57 @@ void receiveAction(){
   }
 }
 
+void flash_color(uint32_t c){
+  if((now-last_flash) >= FLASH_INTERVAL){
+    if(!led_state){
+      set_color(c);
+      led_state = 1;
+    }else{
+      set_color(off);
+      led_state = 0;
+    }
+    last_flash += FLASH_INTERVAL;
+  }
+}
+
 void handleAction(){
   switch(current_action[0]){
     case '0':
-      Serial.println("White");
-      set_color(white);
+      flash_color(white);
       break;
     case '1':
-      Serial.println("Red");
-      set_color(red);
+      flash_color(red);
       break;
     case '2':
-      Serial.println("Green");
-      set_color(green);
+      flash_color(green);
       break;
     case '3':
-      Serial.println("Blue");
-      set_color(blue);
+      flash_color(blue);
       break;
     case '4':
-      Serial.println("Yellow");
-      set_color(yellow);
+      flash_color(yellow);
       break;
     case '5':
-      Serial.println("Fade");
+      set_color(off);
+      //Serial.println("Fade");
       break;
     case '6':
-      Serial.println("Cycle Colors");
+      //Serial.println("Cycle Colors");
       break;
     case '7':
-      Serial.println("7");
+      //Serial.println("7");
       break;
     case '8':
-      Serial.println("8");
+      //Serial.println("8");
       break;
     case '9':
-      Serial.println("9");
+      //Serial.println("9");
       break;
     default:
       break;
   }
 }
 
-
-int last = 0;
-int now = 0;
 void loop()
 {
   receiveAction();
@@ -240,7 +246,7 @@ void loop()
 
 void readAndSendSensors(){
   readSensors();
-  
+
   Serial.println(dataPacket);
 
   // send datapacket
