@@ -26,6 +26,7 @@
 #define IS_RFM69HW    //uncomment only for RFM69HW! Leave out if you have RFM69W!
 //#define LED           9 // led pin
 #define PIN           6 // NeoPixel driver pin
+#define SENSOR_SAMPLE 8000
 
 // define objects
 RFM69 radio;
@@ -34,6 +35,14 @@ Adafruit_BMP280 bme; // I2C
 Adafruit_Si7021 sensor = Adafruit_Si7021();
 Adafruit_TSL2591 tsl = Adafruit_TSL2591(2591); // pass in a number for the sensor identifier (for your use later)
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(1, PIN, NEO_GRB + NEO_KHZ800);  // number of pixels, digital pin, pixel flags
+
+//Colors
+
+uint32_t red = strip.Color(255, 0, 0);
+uint32_t green = strip.Color(0, 255, 0);
+uint32_t blue = strip.Color(0, 0, 255);
+uint32_t yellow = strip.Color(255, 255, 0);
+uint32_t white = strip.Color(255, 255, 255);
 
 
 /*
@@ -69,6 +78,8 @@ int ppm, _ppm;
 float co2;
 
 char dataPacket[150];
+
+char current_action[10];
 
 ISR(WDT_vect)  // Interrupt service routine for WatchDog Timer
 {
@@ -152,51 +163,89 @@ void sleep()
   delay(1);
 }
 
-void handleActions(){
-  Serial.println("Checking for data");
-  for(int i = 0; i < 500; i++){
-    if (radio.receiveDone()){
-     char incoming_action[10];
-     Serial.print("Got Data: ");
-     if (radio.DATALEN > 0){
-       for(byte i = 0; i < radio.DATALEN; i++){
-         incoming_action[i] = (char)radio.DATA[i];
-       }
+void receiveAction(){
+  if (radio.receiveDone()){
+   char incoming_action[10];
+   Serial.print("Got Data: ");
+   if (radio.DATALEN > 0){
+     for(byte i = 0; i < radio.DATALEN; i++){
+       incoming_action[i] = (char)radio.DATA[i];
      }
-     Serial.println(incoming_action);
-     memset(incoming_action, 0, sizeof incoming_action);
-     radio.sendACK();
-    }
-    delay(10);
+   }
+   Serial.println(incoming_action);
+   memcpy(current_action, incoming_action, 10);
+   memset(incoming_action, 0, sizeof incoming_action);
+   if (radio.ACKRequested()){
+    byte theNodeID = radio.SENDERID;
+    radio.sendACK();
+   }
+  }
+}
+
+void handleAction(){
+  switch(current_action[0]){
+    case '0':
+      Serial.println("White");
+      set_color(white);
+      break;
+    case '1':
+      Serial.println("Red");
+      set_color(red);
+      break;
+    case '2':
+      Serial.println("Green");
+      set_color(green);
+      break;
+    case '3':
+      Serial.println("Blue");
+      set_color(blue);
+      break;
+    case '4':
+      Serial.println("Yellow");
+      set_color(yellow);
+      break;
+    case '5':
+      Serial.println("Fade");
+      break;
+    case '6':
+      Serial.println("Cycle Colors");
+      break;
+    case '7':
+      Serial.println("7");
+      break;
+    case '8':
+      Serial.println("8");
+      break;
+    case '9':
+      Serial.println("9");
+      break;
+    default:
+      break;
   }
 }
 
 
+int last = 0;
+int now = 0;
 void loop()
 {
-  handleActions();
-  //sleep();
+  receiveAction();
+  handleAction();
+  now = millis();
+  if((now - last) > SENSOR_SAMPLE){
+    readAndSendSensors();
+    last += SENSOR_SAMPLE;
+  }
+}
+
+void readAndSendSensors(){
   readSensors();
   
   Serial.println(dataPacket);
 
   // send datapacket
-  radio.sendWithRetry(GATEWAYID, dataPacket, strlen(dataPacket), 5, 100);  // send data, retry 5 times with delay of 100ms between each retry
+  radio.sendWithRetry(GATEWAYID, dataPacket, strlen(dataPacket), 8, 0);  // send data, retry 8 times with delay of 0ms between each retry
   dataPacket[0] = (char)0; // clearing first byte of char array clears the array
-
-  //colorWipe(strip.Color(0, 255, 0), 10); // Green
-  //strip.show();
-
-  for (int i = 0; i <= 255; i++)
-  {
-      colorWipe(strip.Color(0,i,0), 1);
-  }
-  for (int i = 255; i > 0; i--)
-  {
-      colorWipe(strip.Color(0,i,0), 2);
-  }
-  colorWipe(strip.Color(0, 0, 0), 1); // turn pixel off
-  strip.show();
 }
 
 
@@ -408,12 +457,9 @@ void fadeLED()
 
 
 // Fill the dots one after the other with a color
-void colorWipe(uint32_t c, uint8_t wait) {
+void set_color(uint32_t c) {
   for(uint16_t i=0; i<strip.numPixels(); i++) {
     strip.setPixelColor(i, c);
-    strip.show();
-    delay(wait);
   }
+  strip.show();
 }
-
-// bruh
