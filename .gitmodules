@@ -22,3 +22,6 @@
 [submodule "libraries/Adafruit_NeoPixel"]
 	path = libraries/Adafruit_NeoPixel
 	url = https://github.com/adafruit/Adafruit_NeoPixel
+[submodule "libraries/SPIFlash"]
+	path = libraries/SPIFlash
+	url = git@github.com:LowPowerLab/SPIFlash.git
