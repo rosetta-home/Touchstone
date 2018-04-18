@@ -6,7 +6,7 @@
 #include <RFM69.h>  //  https://github.com/LowPowerLab/RFM69
 #include <SPI.h>
 #include <Arduino.h>
-#include <Wire.h> 
+#include <Wire.h>
 #include <CCS811.h> // https://github.com/AKstudios/CCS811-library
 //#include <Adafruit_SHT31.h> //https://github.com/adafruit/Adafruit_SHT31
 #include <Adafruit_Si7021.h> // https://github.com/adafruit/Adafruit_Si7021
@@ -25,7 +25,6 @@
 #define GATEWAYID     1
 #define NETWORKID     101
 #define FREQUENCY     RF69_915MHZ //Match this with the version of your Moteino! (others: RF69_433MHZ, RF69_868MHZ)
-#define ENCRYPTKEY    "Tt-Mh=SQ#dn#JY3_" //has to be same 16 characters/bytes on all nodes, not more not less!
 #define IS_RFM69HW    //uncomment only for RFM69HW! Leave out if you have RFM69W!
 //#define LED           9 // led pin
 #define PIN           6 // NeoPixel driver pin
@@ -79,7 +78,7 @@ ISR(WDT_vect)  // Interrupt Service Routine for WatchDog Timer
 
 
 void ISR_button()  // Interrupt Service Routine for button press
-{ 
+{
   for (int i = 0; i <= 255; i++)
   {
       colorWipe(strip.Color(0,0,i), 1);  // blue
@@ -104,7 +103,7 @@ void setup()
   attachInterrupt(1, ISR_button, FALLING);  // enable hardware interrupt on pin 3 when pin goes from HIGH to LOW
 
   ccs811_sensor.begin(uint8_t(ADDR), uint8_t(WAKE_PIN));  // initialize CCS811 sensor
-  
+
   mySerial.begin(9600);   // initialize MHz-19 in UART mode
   mySerial2.begin(9600);   // initialize PMS7003 in UART mode
 
@@ -117,9 +116,9 @@ void setup()
   radio.setHighPower(); //uncomment only for RFM69HW!
 #endif
   radio.encrypt(ENCRYPTKEY);
-  
+
   //pinMode(9, OUTPUT);  // pin 9 controls LED
-  
+
   strip.begin(); // initialize neo pixels
   strip.show(); // Initialize all pixels to 'off'
 
@@ -135,7 +134,7 @@ void setup()
   unsigned int responseLow = (unsigned int) response[3];
   ppm = (256 * responseHigh) + responseLow;
   _ppm = ppm;
-  
+
   Serial.println("Ready");
   delay(10);
 }
@@ -144,9 +143,9 @@ void setup()
 void sleep()
 {
   Serial.flush(); // empty the send buffer, before continue with; going to sleep
-  
+
   radio.sleep();
-  
+
   cli();          // stop interrupts
   MCUSR = 0;
   WDTCSR  = (1<<WDCE | 1<<WDE);     // watchdog change enable
@@ -158,36 +157,36 @@ void sleep()
 
   asm("wdr");
   set_sleep_mode(SLEEP_MODE_PWR_DOWN);
-  cli();       
+  cli();
 
-  sleep_enable();  
+  sleep_enable();
   sleep_bod_disable();
-  sei();       
-  sleep_cpu();   
-    
-  sleep_disable();   
-  sei();  
+  sei();
+  sleep_cpu();
+
+  sleep_disable();
+  sei();
 
   ADCSRA = _ADCSRA; // restore ADC state (enable ADC)
   delay(1);
 }
 
 
-void loop() 
+void loop()
 {
   sleep();
   readSensors();
-  
+
   Serial.println(dataPacket);
   delay(50);
- 
+
   // send datapacket
   radio.sendWithRetry(GATEWAYID, dataPacket, strlen(dataPacket), 5, 100);  // send data, retry 5 times with delay of 100ms between each retry
   dataPacket[0] = (char)0; // clearing first byte of char array clears the array
- 
+
   //colorWipe(strip.Color(0, 255, 0), 10); // Green
   //strip.show();
-  
+
   for (int i = 0; i <= 255; i++)
   {
       colorWipe(strip.Color(0,i,0), 1);
@@ -209,13 +208,15 @@ void readSensors()
   float temp = sht31.readTemperature();
   float rh = sht31.readHumidity();
   */
-  
+
   // T/RH - Si7021
   sensor.begin();
   float temp = sensor.readTemperature();
+  temp = temp - 2;
   float rh = sensor.readHumidity();
-  
-  
+  rh = rh + 5;
+
+
   // Light Intensity - TSL2591
   tsl.begin();
   tsl.setGain(TSL2591_GAIN_MED);      // 25x gain
@@ -234,7 +235,7 @@ void readSensors()
   /*
   // IAQ core
   Wire.requestFrom(iaqaddress, 9);
-  co2 = (Wire.read()<< 8 | Wire.read()); 
+  co2 = (Wire.read()<< 8 | Wire.read());
   statu = Wire.read();
   resistance = (Wire.read()& 0x00)| (Wire.read()<<16)| (Wire.read()<<8| Wire.read());
   tvoc = (Wire.read()<<8 | Wire.read());
@@ -279,7 +280,7 @@ void readSensors()
   float averageADC = sumADC/2.0;
   sound = 52.864 * (exp(0.0011 * averageADC));  // roughly calibrated sound levels (in dB) in a typical office environment using a reference sound level meter (SLM01)
 
-  
+
   // BMP280 air pressure sensor
   bme.begin();
   float bar = bme.readPressure();
@@ -313,7 +314,7 @@ void readSensors()
   //Serial.println(buf);
   //Serial.println(atmPM01Value);
   pm = atmPM01Value;
-  
+
 
   // define character arrays for all variables
   char _i[3];
@@ -327,21 +328,21 @@ void readSensors()
   char _s[7];
   char _v[7];
   char _p[7];
-  
+
   // convert all flaoting point and integer variables into character arrays
   dtostrf(NODEID, 1, 0, _i);
   dtostrf(temp, 3, 2, _t);  // this function converts float into char array. 3 is minimum width, 2 is decimal precision
   dtostrf(rh, 3, 2, _h);
-  dtostrf(co2, 3, 0, _c); 
+  dtostrf(co2, 3, 0, _c);
   dtostrf(bar, 3, 2, _g);
   dtostrf(lux, 1, 0, _l);
   dtostrf(sound, 1, 1, _s);
   dtostrf(tvoc, 1, 0, _v);
   dtostrf(pm, 1, 0, _p);
   delay(50);
-  
+
   dataPacket[0] = 0;  // first value of dataPacket should be a 0
-  
+
   // create datapacket by combining all character arrays into a large character array
   strcat(dataPacket, "i:");
   strcat(dataPacket, _i);
@@ -374,7 +375,7 @@ void get_data(unsigned char b[])
   }
   receiveSum = receiveSum + 0x42;
   receiveSum == ((b[31 - 2] << 8) + b[31 - 1]);
-  
+
   if(b[0] == 0x4D && receiveSum)
   {
     CF1PM01Value = (b[9] << 8) + b[10]; //PM1.0 CF1 value of the air detector module
@@ -402,10 +403,10 @@ void fadeLED()
   for(int i=0; i<510; i=i+5)  // 255 is max analog value, 255 * 2 = 510
   {
     analogWrite(9, brightness);  // pin 9 is LED
-  
+
     // change the brightness for next time through the loop:
     brightness = brightness + fadeAmount;  // increment brightness level by 5 each time (0 is lowest, 255 is highest)
-  
+
     // reverse the direction of the fading at the ends of the fade:
     if (brightness <= 0 || brightness >= 255)
     {
