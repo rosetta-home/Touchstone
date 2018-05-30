@@ -5,10 +5,14 @@ An open hardware and software indoor air quality sensor provided by the [Nationa
 ![bruh](assets/render.png)
 
 **Features**:
-* Atmel ATmega328P 16MHz 8-bit processor
-* FTDI FT231XQ for serial communication
+* Can measure upto 8 indoor environmental quality parameters (listed below)
+* Atmel ATmega328P 16MHz 8-bit processor (based on Arduino platform)
+* Genuine FTDI chip for serial communication with host computer
 * Mini RGB LED for status and notification
 * Programmable button for custom actions such as reset, configuration, etc.
+* Long range wireless data transfer using FSK radio (no dependence on WiFi, cellular, etc.)
+* Small footprint PCB board (less than 2x2 inches or 50x50mm)
+* Low power requirements (35mA idle with all sensors running, 190mA peak during wireless data transfer)
 
 **Measurement Points**:
 * Temperature (Si7021)
@@ -21,8 +25,8 @@ An open hardware and software indoor air quality sensor provided by the [Nationa
 * Sound Intensity (Electret Microphone)
 
 **Connectivity**:
-* FSK (RFM69HW 915MHz)
-* USB (FTDI FX231XQ)
+* FSK radio (RFM69HW 915MHz)
+* MicroUSB (FTDI FX231XQ)
 
 License:
 Apache License Version 2.0
