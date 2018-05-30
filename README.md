@@ -4,13 +4,13 @@ An open hardware and software indoor air quality sensor provided by the [Nationa
 ![](assets/Touchstone.jpg)
 ![bruh](assets/render.png)
 
-Features:
+**Features**:
 * Atmel ATmega328P 16MHz 8-bit processor
 * FTDI FT231XQ for serial communication
 * Mini RGB LED for status and notification
 * Programmable button for custom actions such as reset, configuration, etc.
 
-Measurement Points:
+**Measurement Points**:
 * Temperature (Si7021)
 * Relative Humidity (Si7021)
 * VOC (Volatile Organic Compounds) (CCS811/IAQ-Core)
@@ -20,7 +20,7 @@ Measurement Points:
 * Light Intensity (TSL2591)
 * Sound Intensity (Electret Microphone)
 
-Connectivity:
+**Connectivity**:
 * FSK (RFM69HW 915MHz)
 * USB (FTDI FX231XQ)
 
